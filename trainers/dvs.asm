@@ -92,42 +92,43 @@ GetTrainerDVs: ; 270c4
 	db $21, $d2 ; H
 
 .RedDVs
-	db $0E, $7A ; AA-j
-	db $CA, $7D ; AAAAAAAAAA
-	db $D0, $E4 ; OMASTAR
-	db $90, $A6 ; AATTVVV
-	db $03, $71 ; AIIIIIIRRR
-	db $AA, $64 ; aaabaaajss
+	db $FD, $DE ; PIKACHU
+	db $FD, $DE ; ESPEON
+	db $FD, $DE ; SNORLAX
+	db $FD, $DE ; VENUSAUR
+	db $FD, $DE ; CHARIZARD
+	db $FD, $DE ; BLASTOISE
 
 .AJDVs
-	db $89, $CF ; AAJRR  RRR
-	db $23, $80 ; KT
-	db $8A, $E4 ; AAAS RJ-1
-	db $F7, $6E ; AAAAAtttta
-	db $F8, $A0 ; BBBBBD
+	db $DC, $DD ; MEGANIUM
+	db $DC, $DD ; TYPHLOSION
+	db $DC, $DD ; FERALIGATR
+	db $DC, $DD ; UMBREON
+	db $DC, $DD ; SKARMORY
+	db $DC, $DD ; DONPHAN
 
 .AbeDVs
-	db $52, $7C ; AAbbABCabb
-	db $EC, $E5 ;  RRRRIIIIH
-	db $82, $EE ; IIII--??(U
-	db $0C, $9F ; AAA--××<MN><MN><MN>
-	db $2D, $F3 ; (ssjj <MN>..,
-	db $D8, $D5 ; RRQPO:<PK><PK><PK><PK>
+	db $FD, $DE ; ZAPDOS
+	db $FD, $DE ; NIDOKING
+	db $FD, $DE ; OMASTAR
+	db $FD, $DE ; VENOMOTH
+	db $FD, $DE ; LAPRAS
+	db $FD, $DE ; PIDGEOT
 
-.BabaDVs
-	db $94, $1D ; BEST
-	db $EF, $B0 ; DONG
-	db $46, $E8 ; EVER
-	db $EA, $AA ; DADA
-	db $4E, $2B ; ORGY
-	db $E8, $E5 ; DEKU
+.BabaDVs 
+	db $FD, $FF ; RAIKOU
+	db $CF, $FF ; ENTEI
+	db $AF, $FF ; SUICUNE
+	db $1F, $FF ; CELEBI
+	db $FF, $FF ; LUGIA
+	db $FF, $FF ; HO-OH
 
 TrainerClassDVs: ; 270d6
 	;  Atk  Spd
 	;  Def  Spc I tried to balance gyms to effective 69 total
 	db $FA, $F7 ; falkner
-	db $CC, $BA ; bugsy
 	db $7F, $DA ; whitney
+	db $CC, $BA ; bugsy
 	db $CA, $FF ; morty
 	db $9E, $8F ; pryce
 	db $BF, $7A ; jasmine
@@ -166,7 +167,7 @@ TrainerClassDVs: ; 270d6
 	db $78, $88 ; swimmerf
 	db $98, $88 ; sailor
 	db $98, $88 ; super nerd
-	db $98, $88 ; rival2
+	db $DD, $DD ; rival2
 	db $98, $88 ; guitarist
 	db $A8, $88 ; hiker
 	db $98, $88 ; biker
@@ -191,18 +192,18 @@ TrainerClassDVs: ; 270d6
 	db $DD, $DD ; blue
 	db $98, $88 ; officer
 	db $7E, $A8 ; gruntf
-	db $aa, $aa ; mysticalman
-	db $88, $98 ; bill
-	db $DD, $DD ; elm
-	db $DD, $DD ; tppPc
-	db $D8, $C8 ; Giovanni
-	db $D8, $C8 ; coolsibs
-	db $DD, $DD ; rivalrb
-	db $DD, $DD ; rivalrb
-	db $98, $88 ; brockrb
-	db $78, $88 ; mistyrb
-	db $BA, $BA; baba
-	db $DD, $DD ; executiveegk
+	db $AA, $AA ; mysticalman
+	db $AA, $AA ; bill
+	db $FF, $FF ; elm
+	db $FF, $FF ; tppPc
+	db $D8, $A8 ; Giovanni
+	db $AA, $C8 ; coolsibs
+	db $EE, $FF ; rivalrb
+	db $EE, $FF ; rivalrb
+	db $AF, $8F ; brock
+	db $F8, $CD ; misty
+	db $EE, $FF ; kris
+	db $D8, $A8 ; executiveegk
 	
 ; 2715c
 
