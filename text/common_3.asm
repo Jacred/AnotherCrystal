@@ -14,11 +14,9 @@ UnknownText_0x1c0043: ; 1c0043
 	text "Hello, hello! I'm"
 	line "the NAME RATER."
 
-	para "I rate the names"
-	line "of #MON."
-
-	para "Would you like me"
-	line "to rate names?"
+	para "Want me to rate"
+	line "the nicknames of"
+	cont "your #MON?"
 	done
 ; 1c00a0
 
@@ -33,15 +31,16 @@ UnknownText_0x1c00cd: ; 1c00cd
 	text "Hm<...> @"
 	text_from_ram StringBuffer1
 	text "<...>"
-	line "That's a fairly"
-	cont "decent name."
+
+	para "That's a fairly"
+	line "decent name."
 
 	para "But, how about a"
 	line "slightly better"
 	cont "nickname?"
 
-	para "Want me to give it"
-	line "a better name?"
+	para "Want me to give"
+	line "it a better name?"
 	done
 ; 1c0142
 
@@ -55,8 +54,7 @@ UnknownText_0x1c0142: ; 1c0142
 UnknownText_0x1c0171: ; 1c0171
 	text "That's a better"
 	line "name than before!"
-
-	para "Well done!"
+	cont "Well done!"
 	done
 ; 1c019e
 
@@ -67,42 +65,42 @@ UnknownText_0x1c019e: ; 1c019e
 ; 1c01be
 
 UnknownText_0x1c01be: ; 1c01be
-	text "Hm<...> @"
+	text "Hmm<...> @"
 	text_from_ram StringBuffer1
-	text "?"
-	line "What a great name!"
-	cont "It's perfect."
+	text "<...>"
+
+	para "I'll bet that name"
+	line "was special to"
+	cont "its old trainer<...>"
 
 	para "Treat @"
 	text_from_ram StringBuffer1
 	text ""
-	line "with loving care."
+	line "with loving care!"
 	done
 ; 1c0208
 
 UnknownText_0x1c0208: ; 1c0208
-	text "Whoa<...> That's just"
-	line "an EGG."
+	text "That's an EGG."
+	line "It has no name!"
 	done
 ; 1c0222
 
 UnknownText_0x1c0222: ; 1c0222
 	text "It might look the"
 	line "same as before,"
-
-	para "but this new name"
-	line "is much better!"
-
-	para "Well done!"
+	cont "but this new name"
+	cont "is much better!"
+	cont "Well done!"
 	done
 ; 1c0272
 
 UnknownText_0x1c0272: ; 1c0272
-	text "All right. This"
-	line "#MON is now"
-	cont "named @"
+	text "OK! This #MON"
+	line "will be known as"
+	cont "@"
 	text_from_ram StringBuffer1
-	text "."
+	text "!"
 	prompt
 ; 1c029c
 
@@ -113,10 +111,9 @@ UnknownText_0x1c029c: ; 1c029c
 
 UnknownText_0x1c02a9: ; 1c02a9
 	text ""
-	line "a boosted"
-	cont "@"
+	line "@"
 	deciram StringBuffer2, $25 ; fixes 5-digit EXP glitch
-	text " EXP. Points!"
+	text " EXP. points!"
 	prompt
 ; 1c02c9
 
@@ -124,7 +121,7 @@ UnknownText_0x1c02c9: ; 1c02c9
 	text ""
 	line "@"
 	deciram StringBuffer2, $25 ; fixes 5-digit EXP glitch
-	text " EXP. Points!"
+	text " EXP. points!"
 	prompt
 ; 1c02df
 
@@ -133,7 +130,8 @@ UnknownText_0x1c02df: ; 1c02df
 ; 1c02e6
 
 UnknownText_0x1c02e6: ; 1c02e6
-	text "Do it! @@"
+	text "I choose you,"
+	line "@@"
 ; 1c02f0
 
 UnknownText_0x1c02f0: ; 1c02f0
@@ -159,7 +157,7 @@ UnknownText_0x1c031d: ; 1c031d
 
 UnknownText_0x1c0324: ; 1c0324
 	text " that's"
-	line "enough! Come back!@@"
+	line "enough! Return!@@"
 ; 1c0340
 
 UnknownText_0x1c0340: ; 1c0340
@@ -169,7 +167,7 @@ UnknownText_0x1c0340: ; 1c0340
 
 UnknownText_0x1c0352: ; 1c0352
 	text " good!"
-	line "Come back!@@"
+	line "Get some rest!@@"
 ; 1c0366
 
 UnknownText_0x1c0366: ; 1c0366
@@ -202,15 +200,9 @@ UnknownText_0x1c0396: ; 1c0396
 ; 1c03c2
 
 UnknownText_0x1c03c2: ; 1c03c2
-	text_from_ram StringBuffer2
-	text " is"
-	line "not compatible"
-	cont "with @"
 	text_from_ram StringBuffer1
-	text "."
-
-	para "It can't learn"
-	line "@"
+	text " can't"
+	line "learn @"
 	text_from_ram StringBuffer2
 	text "."
 	prompt
@@ -221,7 +213,7 @@ UnknownText_0x1c03fa: ; 1c03fa
 	line "for any more"
 	cont "@"
 	text_from_ram StringBuffer1
-	text "S."
+	text "s."
 	prompt
 ; 1c0421
 
@@ -235,7 +227,7 @@ UnknownText_0x1c0421: ; 1c0421
 
 UnknownText_0x1c0436: ; 1c0436
 	text "The link has been"
-	line "cancelled."
+	line "canceled."
 	prompt
 ; 1c0454
 
@@ -246,7 +238,7 @@ UnknownText_0x1c0454: ; 1c0454
 ; 1c046a
 
 UnknownText_0x1c046a: ; 1c046a
-	text "Must retrieve GIFT"
+	text "Must obtain GIFT"
 	line "at #MON CENTER."
 	prompt
 ; 1c048e
@@ -315,7 +307,7 @@ UnknownText_0x1c0555: ; 1c0555
 
 UnknownText_0x1c0573: ; 1c0573
 	text "The link has been"
-	line "cancelled."
+	line "canceled."
 	prompt
 ; 1c0591
 
@@ -326,21 +318,21 @@ UnknownText_0x1c0591: ; 1c0591
 ; 1c05a7
 
 _BadgeRequiredText: ; 1c05a7
-	text "Sorry! A new BADGE"
-	line "is required."
+	text "You don't have the"
+	line "required BADGE!"
 	prompt
 ; 1c05c8
 
 UnknownText_0x1c05c8: ; 1c05c8
-	text "Can't use that"
-	line "here."
+	text "That can't be used"
+	line "here!"
 	prompt
 ; 1c05dd
 
 UnknownText_0x1c05dd: ; 1c05dd
 	text_from_ram StringBuffer2
-	text " used"
-	line "CUT!"
+	text " hacked"
+	line "away with CUT!"
 	prompt
 ; 1c05ec
 
@@ -363,20 +355,20 @@ UnknownText_0x1c062e: ; 1c062e
 
 _UsedSurfText: ; 1c062f
 	text_from_ram StringBuffer2
-	text " used"
-	line "SURF!"
+	text " is"
+	line "ready to SURF!"
 	done
 ; 1c063f
 
 _CantSurfText: ; 1c063f
-	text "You can't SURF"
-	line "here."
+	text "You can't use SURF"
+	line "on dry land!"
 	prompt
 ; 1c0654
 
 _AlreadySurfingText: ; 1c0654
 	text "You're already"
-	line "SURFING."
+	line "SURFing."
 	prompt
 ; 1c066c
 
@@ -388,27 +380,27 @@ _AskSurfText: ; 1c066c
 
 UnknownText_0x1c068e: ; 1c068e
 	text_from_ram StringBuffer2
-	text " used"
-	line "WATERFALL!"
+	text " climbed"
+	line "the WATERFALL!"
 	done
 ; 1c06a3
 
 UnknownText_0x1c06a3: ; 1c06a3
-	text "Wow, it's a huge"
-	line "waterfall."
+	text "Maybe a #MON"
+	line "could climb this."
 	done
 ; 1c06bf
 
 UnknownText_0x1c06bf: ; 1c06bf
-	text "Do you want to use"
-	line "WATERFALL?"
+	text "Want to climb"
+	line "the WATERFALL?"
 	done
 ; 1c06de
 
 UnknownText_0x1c06de: ; 1c06de
 	text_from_ram StringBuffer2
-	text " used"
-	line "DIG!"
+	text " dug an"
+	line "escape route!"
 	done
 ; 1c06ed
 
@@ -419,85 +411,76 @@ UnknownText_0x1c06ed: ; 1c06ed
 ; 1c0705
 
 UnknownText_0x1c0705: ; 1c0705
-	text "Can't use that"
-	line "here."
+	text "That can't be used"
+	line "here!"
 	done
 ; 1c071a
 
 UnknownText_0x1c071a: ; 1c071a
-	text "Return to the last"
-	line "#MON CENTER."
+	text "Warping to the"
+	line "#MON CENTER<...>"
 	done
 ; 1c073b
 
 UnknownText_0x1c073b: ; 1c073b
-	text "Can't use that"
-	line "here.", $51
+	text "That can't be used"
+	line "here!", $51
 	db $57
 ; 1c0751
 
 UnknownText_0x1c0751: ; 1c0751
-	text "A #MON is using"
-	line "STRENGTH already."
+	text "You're already"
+	line "using STRENGTH!"
 	prompt
 ; 1c0774
 
 UnknownText_0x1c0774: ; 1c0774
 	text_from_ram StringBuffer2
 	text " used"
-	line "STRENGTH!"
+	line "its STRENGTH!"
 	done
 ; 1c0788
 
 UnknownText_0x1c0788: ; 1c0788
 	text_from_ram StringBuffer1
 	text " can"
-	line "move boulders."
+	line "push boulders!"
 	prompt
 ; 1c07a0
 
 UnknownText_0x1c07a0: ; 1c07a0
-	text "A #MON may be"
-	line "able to move this."
-
-	para "Want to use"
+	text "Use your #MON's"
 	line "STRENGTH?"
 	done
 ; 1c07d8
 
 UnknownText_0x1c07d8: ; 1c07d8
-	text "Boulders may now"
-	line "be moved!"
+	text "Boulders can now"
+	line "be pushed!"
 	done
 ; 1c07f4
 
 UnknownText_0x1c07f4: ; 1c07f4
-	text "A #MON may be"
-	line "able to move this."
+	text "Maybe a #MON"
+	line "could push this."
 	done
 ; 1c0816
 
 UnknownText_0x1c0816: ; 1c0816
 	text_from_ram StringBuffer2
-	text " used"
-	line "WHIRLPOOL!"
+	text " passed"
+	line "the WHIRLPOOL!"
 	prompt
 ; 1c082b
 
 UnknownText_0x1c082b: ; 1c082b
-	text "It's a vicious"
-	line "whirlpool!"
-
-	para "A #MON may be"
-	line "able to pass it."
+	text "Maybe a #MON"
+	line "could cross this."
 	done
 ; 1c0864
 
 UnknownText_0x1c0864: ; 1c0864
-	text "A whirlpool is in"
-	line "the way."
-
-	para "Want to use"
+	text "Want to cross this"
 	line "WHIRLPOOL?"
 	done
 ; 1c0897
@@ -510,16 +493,14 @@ UnknownText_0x1c0897: ; 1c0897
 ; 1c08ac
 
 UnknownText_0x1c08ac: ; 1c08ac
-	text "Nope. Nothing<...>"
+	text "No wild #MON"
+	line "appeared<...>"
 	done
 ; 1c08bc
 
 UnknownText_0x1c08bc: ; 1c08bc
-	text "A #MON could be"
-	line "in this tree."
-
-	para "Want to HEADBUTT"
-	line "it?"
+	text "Want to use a"
+	line "HEADBUTT move?"
 	done
 ; 1c08f0
 
@@ -532,27 +513,24 @@ UnknownText_0x1c08f0: ; 1c08f0
 
 UnknownText_0x1c0906: ; 1c0906
 	text "Maybe a #MON"
-	line "can break this."
+	line "could break this."
 	done
 ; 1c0924
 
 UnknownText_0x1c0924: ; 1c0924
-	text "This rock looks"
-	line "breakable."
-
-	para "Want to use ROCK"
-	line "SMASH?"
+	text "Do you want to"
+	line "break this rock?"
 	done
 ; 1c0958
 
 UnknownText_0x1c0958: ; 1c0958
 	text "Oh!"
-	line "A bite!"
+	line "There's a bite!"
 	prompt
 ; 1c0965
 
 UnknownText_0x1c0965: ; 1c0965
-	text "Not even a nibble!"
+	text "Not even a nibble<...>"
 	prompt
 ; 1c0979
 
@@ -585,83 +563,82 @@ UnknownText_0x1c09c7: ; 1c09c7
 ; 1c09dd
 
 UnknownText_0x1c09dd: ; 1c09dd
-	text "This tree can be"
-	line "CUT!"
-
-	para "Want to use CUT?"
+	text "Do you want to"
+	line "chop this tree?"
 	done
 ; 1c0a05
 
 UnknownText_0x1c0a05: ; 1c0a05
-	text "This tree can be"
-	line "CUT!"
+	text "Maybe a #MON"
+	line "could chop this."
 	done
 ; 1c0a1c
 
 UnknownText_0x1c0a1c: ; 1c0a1c
-	text "<PLAYER> found"
+	text "<PLAYER> got the"
 	line "@"
 	text_from_ram StringBuffer3
 	text "!"
 	done
 
 MultipleGetItemBallText::
-	text $52, " found"
+	text $52, " got"
 	line "@"
 	deciram wd10c, $13
 	text " @"
 	text_from_ram StringBuffer3
-	text "S."
+	text "s."
 	done
 ; 1c0a2c
 
 UnknownText_0x1c0a2c: ; 1c0a2c
-	text "But ", "<PLAYER> can't"
-	line "carry any more"
-	cont "items."
+	text "<...>But the PACK was"
+	line "already full<...>"
 	done
 ; 1c0a4e
 
 UnknownText_0x1c0a4e: ; 1c0a4e
 	text "<PLAYER> is out of"
-	line "useable #MON!"
+	line "usable #MON!"
 
-	para "<PLAYER> whited"
+	para $56, " ", $56, " ", $56
+	line $56, " ", $56, " ", $56
+
+	para "<PLAYER> blacked"
 	line "out!"
 	done
 ; 1c0a77
 
 UnknownText_0x1c0a4e_2: ; 1c0a4e
 	text "<PLAYER> is out of"
-	line "useable #MON!"
+	line "usable #MON!"
 
-	para "<PLAYER> panicked"
-	line "and dropped"
-	cont "¥@"
+	para "<PLAYER> dropped"
+	line "¥@"
 	deciram $ffc3, $35
 	text "<...>"
 
 	para $56, " ", $56, " ", $56
 	line $56, " ", $56, " ", $56
 
-	para "<PLAYER> whited"
+	para "<PLAYER> blacked"
 	line "out!"
+	done
 	done
 
 UnknownText_0x1c0a4e_3: ; 1c0a4e
 	text "<PLAYER> is out of"
-	line "useable #MON!"
+	line "usable #MON!"
 
-	para "<PLAYER> paid"
+	para "<PLAYER> forfeit"
 	line "¥@"
 	deciram $ffc3, $35
-	text " to the"
-	cont "winner<...>"
+	text "<...>"
 
 	para $56, " ", $56, " ", $56
 	line $56, " ", $56, " ", $56
 
-	para "<PLAYER> whited"
+	para "<PLAYER> blacked"
 	line "out!"
 	done
 ; 1c0a77
@@ -681,20 +658,10 @@ UnknownText_0x1c0aa9: ; 1c0aa9
 
 UnknownText_0x1c0acc: ; 1c0acc
 	text_from_ram StringBuffer3
-	text ""
-	line "survived the"
-	cont "poisoning!"
+	text "'s"
+	line "poison wore off."
 	prompt
 ; 1c0ada
-
-; UnknownText_0x1c0ada: ; 1c0ada
-	; text "<PLAYER> is out of"
-	; line "useable #MON!"
-
-	; para "<PLAYER> whited"
-	; line "out!"
-	; prompt
-; ; 1c0b03
 
 UnknownText_0x1c0b03: ; 1c0b03
 	text_from_ram StringBuffer3
@@ -710,11 +677,11 @@ UnknownText_0x1c0b1a: ; 1c0b1a
 ; 1c0b3b
 
 UnknownText_0x1c0b3b: ; 1c0b3b
-	text "<PLAYER> sprinkled"
-	line "water."
+	text "<PLAYER> used the"
+	line "REMORAID CAN."
 
-	para "But nothing"
-	line "happened<...>"
+	para "<...>But nothing"
+	line "happened."
 	done
 ; 1c0b65
 
@@ -747,7 +714,7 @@ UnknownText_0x1c0bbb: ; 1c0bbb
 	text ""
 	line "@"
 	text_from_ram StringBuffer2
-	text "(S)?"
+	text "(s)?"
 	done
 ; 1c0bd8
 
@@ -755,14 +722,13 @@ UnknownText_0x1c0bd8: ; 1c0bd8
 	text "Threw away"
 	line "@"
 	text_from_ram StringBuffer2
-	text "(S)."
+	text "(s)."
 	prompt
 ; 1c0bee
 
 UnknownText_0x1c0bee: ; 1c0bee
-	text "OAK: ", "<PLAYER>!"
-	line "This isn't the"
-	cont "time to use that!"
+	text "This isn't the"
+	line "time to use that!"
 	prompt
 ; 1c0c17
 
@@ -793,13 +759,13 @@ Text_DeselectedItem:
 	prompt
 
 Text_NotRegistered:
-	text "That item is not"
+	text "That item isn't"
 	line "registered."
 	prompt
 
 Text_AlreadyRegistered:
-	text "That item is al-"
-	line "ready registered."
+	text "That's already"
+	line "registered."
 	prompt
 
 UnknownText_0x1c0c63: ; 1c0c63
@@ -814,22 +780,35 @@ UnknownText_0x1c0c83: ; 1c0c83
 ; 1c0c85
 
 UnknownText_0x1c0c85: ; 1c0c85
-	text "You can't use it"
+	text "You can't use that"
 	line "in a battle."
 	prompt
 ; 1c0ca3
 
 UnknownText_0x1c0ca3: ; 1c0ca3
-	text "Now, are you a boy"
-	line "or a girl?"
+	text "Why don't you tell"
+	line "me a little bit"
+	cont "about yourself?"
+
+	para "Tell me, are you"
+	line "a boy or a girl?" 
 	done
 ; 1c0cc6
 
 ConfirmBoyText:
-	text "So you're a boy?"
+	text "Hmm<...> Now that you"
+	line "mention it<...>"
+
+	para "Would you happen"
+	line "to be this boy?"
 	done
+
 ConfirmGirlText:
-	text "So you're a girl?"
+	text "Hmm<...> Now that you"
+	line "mention it<...>"
+
+	para "Would you happen"
+	line "to be this girl?"
 	done
 
 UnknownText_0x1c0cc6: ; 1c0cc6
@@ -845,12 +824,12 @@ UnknownText_0x1c0ccf: ; 1c0ccf
 
 UnknownText_0x1c0cd0: ; 1c0cd0
 	interpret_data
-	text $4c, "went way up!"
+	text $4c, "greatly rose!"
 	prompt
 ; 1c0ce0
 
 UnknownText_0x1c0ce0: ; 1c0ce0
-	text " went up!"
+	text " rose!"
 	prompt
 ; 1c0ceb
 
@@ -867,7 +846,7 @@ UnknownText_0x1c0cf4: ; 1c0cf4
 
 UnknownText_0x1c0cf5: ; 1c0cf5
 	interpret_data
-	text $4c, "sharply fell!"
+	text $4c, "greatly fell!"
 	prompt
 ; 1c0d06
 
@@ -916,9 +895,9 @@ UnknownText_0x1c0d6c: ; 1c0d6c
 	prompt
 ; 1c0d7a
 _PowerHerbText:
-	text $5a, "'s"
-	line "POWER HERB"
-	cont "activated!"
+	text $5a
+	line "activated its"
+	cont "POWER HERB!"
 	prompt
 
 
@@ -1010,8 +989,8 @@ UnknownText_0x1c0df3: ; 1c0df3
 	text "It's @"
 	text_from_ram wBreedMon2Nick
 	text ""
-	line "that was left with"
-	cont "the DAY-CARE LADY."
+	line "that was left"
+	cont "at the DAY-CARE."
 	done
 ; 1c0e24
 
@@ -1019,19 +998,19 @@ UnknownText_0x1c0e24: ; 1c0e24
 	text "It's @"
 	text_from_ram wBreedMon1
 	text ""
-	line "that was left with"
-	cont "the DAY-CARE MAN."
+	line "that was left"
+	cont "at the DAY-CARE."
 	done
 ; 1c0e54
 
 UnknownText_0x1c0e54: ; 1c0e54
 	text "It's brimming with"
-	line "energy."
+	line "energy!"
 	prompt
 ; 1c0e6f
 
 UnknownText_0x1c0e6f: ; 1c0e6f
-	text "It has no interest"
+	text "It's uninterested"
 	line "in @"
 	text_from_ram StringBuffer1
 	text "."
@@ -1039,7 +1018,7 @@ UnknownText_0x1c0e6f: ; 1c0e6f
 ; 1c0e8d
 
 UnknownText_0x1c0e8d: ; 1c0e8d
-	text "It appears to care"
+	text "It seems to care"
 	line "for @"
 	text_from_ram StringBuffer1
 	text "."
@@ -1063,8 +1042,8 @@ UnknownText_0x1c0ec6: ; 1c0ec6
 ; 1c0ee3
 
 _EmptyMailboxText: ; 1c0ee3
-	text "There's no MAIL"
-	line "here."
+	text "You don't have any"
+	line "MAIL stored."
 	prompt
 ; 1c0ef9
 
@@ -1086,8 +1065,8 @@ MailMessageLostText: ; 1c0f2c
 ; 1c0f51
 
 MailAlreadyHoldingItemText: ; 1c0f51
-	text "It's already hold-"
-	line "ing an item."
+	text "It's already"
+	line "holding an item."
 	prompt
 ; 1c0f71
 
@@ -1098,18 +1077,18 @@ MailEggText: ; 1c0f71
 ; 1c0f8d
 
 MailMovedFromBoxText: ; 1c0f8d
-	text "The MAIL was moved"
+	text "MAIL was moved"
 	line "from the MAILBOX."
 	prompt
 ; 1c0fb3
 
 UnknownText_0x1c0fb3: ; 1c0fb3
-	text "Yes"
+	text "YES"
 	prompt
 ; 1c0fb8
 
 UnknownText_0x1c0fb8: ; 1c0fb8
-	text "No"
+	text "NO"
 	prompt
 ; 1c0fbc
 
@@ -1135,7 +1114,7 @@ UnknownText_0x1c0fdd: ; 1c0fdd
 UnknownText_0x1c0feb: ; 1c0feb
 	text_from_ram StringBuffer1
 	text " was"
-	line "sent to BILL's PC."
+	line "sent to storage."
 	prompt
 ; 1c1006
 
@@ -1146,12 +1125,13 @@ UnknownText_0x1c1006: ; 1c1006
 ; 1c1024
 
 UnknownText_0x1c1024: ; 1c1024
-	text "What?"
+	text "What do you want"
+	line "to do?"
 	done
 ; 1c102b
 
 UnknownText_0x1c102b: ; 1c102b
-	text "There is a #MON"
+	text "There's a #MON"
 	line "holding MAIL."
 
 	para "Please remove the"
@@ -1198,8 +1178,8 @@ UnknownText_0x1c10dd: ; 1c10dd
 ; 1c10fa
 
 UnknownText_0x1c10fa: ; 1c10fa
-	text "This Bug-Catching"
-	line "Contest winner is@"
+	text "This BUG-CATCHING"
+	line "CONTEST winner is@"
 	interpret_data
 	text "<...>", $51
 	db "@"
@@ -1221,7 +1201,7 @@ UnknownText_0x1c113f: ; 1c113f
 ; 1c1166
 
 UnknownText_0x1c1166: ; 1c1166
-	text "Placing second was"
+	text "Placing second is"
 	line "@"
 	text_from_ram wd016
 	text ",", $51
@@ -1241,7 +1221,7 @@ UnknownText_0x1c1196: ; 1c1196
 ; 1c11b5
 
 UnknownText_0x1c11b5: ; 1c11b5
-	text "Placing third was"
+	text "Placing third is"
 	line "@"
 	text_from_ram wd016
 	text ",", $51
@@ -1264,7 +1244,7 @@ UnknownText_0x1c1203: ; 1c1203
 	text "Let me measure"
 	line "that MAGIKARP."
 
-	para "<...>Hm, it measures"
+	para "Hmm, it measures"
 	line "@"
 	text_from_ram StringBuffer1
 	text "."
@@ -1290,12 +1270,11 @@ UnknownText_0x1c1261: ; 1c1261
 	text "Congratulations!"
 
 	para "We have a match"
-	line "with the ID number"
-
-	para "of @"
+	line "with the ID No."
+	cont "of @"
 	text_from_ram StringBuffer1
 	text " in"
-	line "your party."
+	cont "your party."
 	prompt
 ; 1c12ae
 
@@ -1303,17 +1282,16 @@ UnknownText_0x1c12ae: ; 1c12ae
 	text "Congratulations!"
 
 	para "We have a match"
-	line "with the ID number"
-
-	para "of @"
+	line "with the ID No."
+	cont "of @"
 	text_from_ram StringBuffer1
 	text " in"
-	line "your PC BOX."
+	cont "your PC BOX."
 	prompt
 ; 1c12fc
 
 UnknownText_0x1c12fc: ; 1c12fc
-	text "Give a nickname to"
+	text "Give nickname to"
 	line "the @"
 	text_from_ram StringBuffer1
 	text " you"
@@ -1329,7 +1307,7 @@ UnknownText_0x1c1328: ; 1c1328
 ; 1c1353
 
 UnknownText_0x1c1353: ; 1c1353
-	text "<PLAYER> turned on"
+	text "<PLAYER> booted up"
 	line "the PC."
 	prompt
 ; 1c1368
@@ -1352,7 +1330,7 @@ _KrissPCWithdrewItemsText: ; 1c13a4
 	text ""
 	line "@"
 	text_from_ram StringBuffer2
-	text "(S)."
+	text "(s)."
 	prompt
 ; 1c13bf
 
@@ -1379,7 +1357,7 @@ _KrissPCDepositItemsText: ; 1c1411
 	text ""
 	line "@"
 	text_from_ram StringBuffer2
-	text "(S)."
+	text "(s)."
 	prompt
 ; 1c142d
 
@@ -1395,54 +1373,43 @@ _KrissPCCantDepositText:
 	prompt
 
 UnknownText_0x1c144d: ; 1c144d
-	text "<PLAYER> turned on"
+	text "<PLAYER> booted up"
 	line "the PC."
 	prompt
 ; 1c1462
 
 UnknownText_0x1c1462: ; 1c1462
-	text "Access whose PC?"
+	text "Which PC system"
+	line "should be opened?"
 	done
 ; 1c1474
 
 UnknownText_0x1c1474: ; 1c1474
-	text "BILL's PC"
-	line "accessed."
-
-	para "#MON Storage"
-	line "System opened."
+	text "#MON STORAGE"
+	line "SYSTEM opened."
 	prompt
 ; 1c14a4
 
 UnknownText_0x1c1474_2: ; 1c1474
-	text "SOMEONE's PC"
-	line "accessed."
-
-	para "#MON Storage"
-	line "System opened."
+	text "#MON STORAGE"
+	line "SYSTEM opened."
 	prompt
 ; 1c14a4
 
 UnknownText_0x1c14a4: ; 1c14a4
-	text "Accessed own PC."
-
-	para "Item Storage"
-	line "System opened."
+	text "ITEM STORAGE"
+	line "SYSTEM opened."
 	prompt
 ; 1c14d2
 
 UnknownText_0x1c14d2: ; 1c14d2
-	text "PROF.OAK's PC"
-	line "accessed."
-
-	para "#DEX Rating"
-	line "System opened."
+	text "#DEX RATING"
+	line "SYSTEM opened."
 	prompt
 ; 1c1505
 
 UnknownText_0x1c1505: ; 1c1505
-	text "<...>"
-	line "Link closed<...>"
+	text "Link closed<...>"
 	done
 ; 1c1515
 
@@ -1466,7 +1433,7 @@ _OakPCText3: ; 1c1553
 	text " #MON owned"
 
 	para "PROF.OAK's"
-	line "Rating:"
+	line "#DEX RATING:"
 	done
 ; 1c1585
 
@@ -1477,10 +1444,9 @@ _OakRating01: ; 1c1585
 ; 1c15a5
 
 _OakRating02: ; 1c15a5
-	text "Good. I see you"
+	text "Good! I see you"
 	line "understand how to"
-	cont "use # BALLS."
-	done
+	cont "use # BALLs."
 ; 1c15d5
 
 _OakRating03: ; 1c15d5
@@ -1488,13 +1454,13 @@ _OakRating03: ; 1c15d5
 	line "good at this."
 
 	para "But you have a"
-	line "long way to go."
+	line "long way to go!"
 	done
 ; 1c1611
 
 _OakRating04: ; 1c1611
 	text "You need to fill"
-	line "up the #DEX."
+	line "up that #DEX!"
 
 	para "Catch different"
 	line "kinds of #MON!"
@@ -1502,93 +1468,98 @@ _OakRating04: ; 1c1611
 ; 1c164f
 
 _OakRating05: ; 1c164f
-	text "You're trying--I"
-	line "can see that."
+	text "You're trying!"
+	line "I can see that."
 
 	para "Your #DEX is"
-	line "coming together."
+	line "coming together!"
 	done
 ; 1c168c
 
 _OakRating06: ; 1c168c
 	text "To evolve, some"
-	line "#MON grow,"
+	line "#MON grow."
 
-	para "others use the"
-	line "effects of STONES."
+	para "Others use the"
+	line "effect of items."
 	done
 ; 1c16ca
 
 _OakRating07: ; 1c16ca
 	text "Have you gotten a"
 	line "fishing ROD? You"
-
-	para "can catch #MON"
-	line "by fishing."
+	cont "can catch #MON"
+	cont "by fishing!"
 	done
 ; 1c1709
 
 _OakRating08: ; 1c1709
 	text "Excellent! You"
-	line "seem to like col-"
-	cont "lecting things!"
+	line "seem to like"
+	cont "collecting things!"
 	done
 ; 1c173b
 
 _OakRating09: ; 1c173b
 	text "Some #MON only"
 	line "appear during"
-
-	para "certain times of"
-	line "the day."
+	cont "certain times of"
+	cont "the day!"
 	done
 ; 1c1773
 
 _OakRating10: ; 1c1773
 	text "Your #DEX is"
-	line "filling up. Keep"
-	cont "up the good work!"
+	line "filling up!"
+
+	para "Keep up the good"
+	line "work!"
 	done
 ; 1c17a4
 
 _OakRating11: ; 1c17a4
-	text "I'm impressed."
-	line "You're evolving"
-
-	para "#MON, not just"
-	line "catching them."
+	text "I'm impressed!"
+	
+	para "You're evolving"
+	line "#MON, not just"
+	cont "catching them!"
 	done
 ; 1c17e0
 
 _OakRating12: ; 1c17e0
-	text "Have you met KURT?"
-	line "His custom BALLS"
-	cont "should help."
+	text "Have you met KURT"
+	line "the BALL SMITH?"
+
+	para "His custom BALLs"
+	line "should help!"
 	done
 ; 1c1812
 
 _OakRating13: ; 1c1812
-	text "Wow. You've found"
+	text "Wow! You've found"
 	line "more #MON than"
-
-	para "the last #DEX"
-	line "research project."
+	cont "the last #DEX"
+	cont "research project!"
 	done
 ; 1c1853
 
 _OakRating14: ; 1c1853
-	text "Are you trading"
-	line "your #MON?"
+	text "Try using the"
+	line "search function"
+	cont "of your #DEX!"
 
-	para "It's tough to do"
-	line "this alone!"
+	para "Some #MON can"
+	line "only be found in"
+	cont "KANTO or JOHTO!"
 	done
 ; 1c188b
 
 _OakRating15: ; 1c188b
-	text "Wow! You've hit"
-	line "200! Your #DEX"
-	cont "is looking great!"
+	text "Wow! You've caught"
+	line "200 kinds!"
+
+	para "Your #DEX is"
+	line "looking great!"
 	done
 ; 1c18bc
 
@@ -1604,18 +1575,16 @@ _OakRating16: ; 1c18bc
 _OakRating17: ; 1c18f7
 	text "Magnificent! You"
 	line "could become a"
-
-	para "#MON professor"
-	line "right now!"
+	cont "#MON PROFESSOR"
+	cont "right now!"
 	done
 ; 1c1932
 
 _OakRating18: ; 1c1932
 	text "Your #DEX is"
 	line "amazing! You're"
-
-	para "ready to turn"
-	line "professional!"
+	cont "ready to turn"
+	cont "professional!"
 	done
 ; 1c196b
 
@@ -1630,16 +1599,17 @@ _OakRatingNearlyThere:
 
 _OakRating19: ; 1c196b
 	text "Whoa! A perfect"
-	line "#DEX! I've"
+	line "#DEX!"
 
-	para "dreamt about this!"
-	line "Congratulations!"
+	para "I've dreamt of"
+	line "this day!"
+	cont "Congratulations!"
 	done
 ; 1c19aa
 
 _OakPCText4: ; 1c19aa
-	text "The link to PROF."
-	line "OAK's PC closed."
+	text "Closed the link"
+	line "to PROF.OAK's PC."
 	done
 ; 1c19cd
 
@@ -1672,7 +1642,7 @@ UnknownText_0x1c1a65: ; 1c1a65
 
 UnknownText_0x1c1a6c: ; 1c1a6c
 	text "Would you like to"
-	line "end the Contest?"
+	line "end the contest?"
 	done
 ; 1c1a90
 
@@ -1680,7 +1650,7 @@ UnknownText_0x1c1a90: ; 1c1a90
 	text "Toss out how many"
 	line "@"
 	text_from_ram StringBuffer2
-	text "(S)?"
+	text "(s)?"
 	done
 ; 1c1aad
 
@@ -1690,7 +1660,7 @@ UnknownText_0x1c1aad: ; 1c1aad
 	text ""
 	line "@"
 	text_from_ram StringBuffer2
-	text "(S)?"
+	text "(s)?"
 	done
 ; 1c1aca
 
@@ -1698,20 +1668,19 @@ UnknownText_0x1c1aca: ; 1c1aca
 	text "Discarded"
 	line "@"
 	text_from_ram StringBuffer1
-	text "(S)."
+	text "(s)."
 	prompt
 ; 1c1adf
 
 UnknownText_0x1c1adf: ; 1c1adf
-	text "That's too impor-"
-	line "tant to toss out!"
+	text "It's too important"
+	line "to throw away!"
 	prompt
 ; 1c1b03
 
 UnknownText_0x1c1b03: ; 1c1b03
-	text "OAK: ", "<PLAYER>!"
-	line "This isn't the"
-	cont "time to use that!"
+	text "This isn't the"
+	line "time to use that!"
 	done
 ; 1c1b2c
 
@@ -1722,19 +1691,18 @@ UnknownText_0x1c1b2c: ; 1c1b2c
 	line "@"
 	text_from_ram StringBuffer1
 	text " and"
-
-	para "made it hold"
-	line "@"
+	cont "gave it the"
+	cont "@"
 	text_from_ram StringBuffer2
 	text "."
 	prompt
 ; 1c1b57
 
 UnknownText_0x1c1b57: ; 1c1b57
-	text "Made @"
+	text "Gave @"
 	text_from_ram wd050
 	text ""
-	line "hold @"
+	line "the @"
 	text_from_ram StringBuffer2
 	text "."
 	prompt
@@ -1754,8 +1722,8 @@ UnknownText_0x1c1b8e: ; 1c1b8e
 ; 1c1baa
 
 UnknownText_0x1c1baa: ; 1c1baa
-	text "Item storage space"
-	line "full."
+	text "Item storage"
+	line "space full."
 	prompt
 ; 1c1bc4
 
@@ -1773,17 +1741,17 @@ UnknownText_0x1c1bdc: ; 1c1bdc
 	text_from_ram wd050
 	text " is"
 	line "already holding"
-
-	para "@"
+	cont "@"
 	text_from_ram StringBuffer1
 	text "."
-	line "Switch items?"
+
+	para "Switch items?"
 	done
 ; 1c1c09
 
 UnknownText_0x1c1c09: ; 1c1c09
-	text "This item can't be"
-	line "held."
+	text "This can't be held"
+	line "by a #MON."
 	prompt
 ; 1c1c22
 
@@ -1833,31 +1801,35 @@ UnknownText_0x1c1ce3: ; 1c1ce3
 UnknownText_0x1c1cf3: ; 1c1cf3
 	text "An item in your"
 	line "PACK may be"
-
-	para "registered for use"
-	line "on SELECT Button."
+	cont "registered for"
+	cont "use with SELECT."
 	done
 ; 1c1d35
 
 _OakText1: ; 1c1d35
-	text "Hello! Sorry to"
+	text "Er-hem! Sorry to"
 	line "keep you waiting!"
 
 	para "Welcome to the"
 	line "world of #MON!"
 
-	para "My name is OAK."
+	para "My name is"
+	line "PROFESSOR OAK."
 
-	para "People call me the"
-	line "#MON PROF."
+	para "This world is"
+	line "inhabited by some"
+	cont "very interesting"
+	cont "creatures."
+
+	para "And, as I'm sure"
+	line "you're well aware<...>"
 	prompt
 ; 1c1da4
 
 _OakText2: ; 1c1da4
-	text "This world is in-"
-	line "habited by crea-", $55
-	db "tures that we call", $55
-	db "#MON.@@"
+	text "<...>They are known"
+	line "around the world"
+	cont "as #MON!@@"
 ; 1c1de2
 
 _OakText3: ; 1c1de2
@@ -1870,28 +1842,31 @@ UnknownText_0x1c1de4: ; 1c1de4
 ; 1c1de5
 
 _OakText4: ; 1c1de5
-	text "People and #MON"
-	line "live together by"
+	text "For some people,"
+	line "#MON are pets."
 
-	para "supporting each"
-	line "other."
+	para "Others enjoy"
+	line "using them for"
+	cont "#MON battles."
 
-	para "Some people play"
-	line "with #MON, some"
-	cont "battle with them."
+	para "Humans and"
+	line "#MON coexist"
+	cont "by supporting"
+	cont "each other in"
+	cont "various ways."
 	prompt
 ; 1c1e51
 
 _OakText5: ; 1c1e51
 	text "But we don't know"
 	line "everything about"
-	cont "#MON yet."
+	cont "#MON just yet."
 
 	para "There are still"
-	line "many mysteries to"
-	cont "solve."
+	line "many mysteries"
+	cont "to be solved."
 
 	para "That's why I study"
-	line "#MON every day."
+	line "them every day!"
 	prompt
 ; 1c1ec9
