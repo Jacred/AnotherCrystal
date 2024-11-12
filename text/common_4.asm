@@ -1,6 +1,9 @@
 _OakText6: ; 0x1c4000
-	text "And what did you"
-	line "say your name was?"
+	text "Aha! I thought I"
+	line "recognized you!"
+
+	para "<...>Erm, what was"
+	line "your name again?"
 	prompt
 ; 0x1c4026
 
@@ -12,97 +15,108 @@ _OakText7: ; 0x1c4026
 	line "#MON story is"
 	cont "about to unfold."
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "Fun experiences,"
+	line "tough challenges<...>"
+
+	para "There's so much"
+	line "waiting for you!"
 
 	para "A world of dreams"
 	line "and adventures"
+	cont "with #MON"
+	cont "awaits! Let's go!"
 
-	para "with #MON"
-	line "awaits! Let's go!"
+	para "Things might seem"
+	line "strange at first,"
+	cont "but don't worry!"
 
-	para "I'll be seeing you"
-	line "later!"
+	para "I'm sure you'll do"
+	line "great, <PLAYER>!"
+
+	para "I'll see you soon!"
+	line "Stay determined!"
 	done
 ; 0x1c40e6
 
 _OakText8:
-	text "Ah, so it's"
-	line "<PLAYER>."
+	text "That's right!"
+	line "Now I remember!"
+
+	para "Good to see you"
+	line "again, <PLAYER>!"
 	prompt
 
 _OakText9:
-	text "This is your best"
-	line "friend."
+	text "This young man is"
+	line "your neighbor."
 
 	para "He's been your"
-	line "rival since the"
-	cont "two of you were"
-	cont "babies."
+	line "best friend and"
+	cont "rival ever since"
+	cont "you were kids."
 
 	para "You remember his"
 	line "name, don't you?"
 	done
 
 _OakText10:
-	text "That's absolutely"
-	line "correct! His name"
-	cont "is <GREEN>!"
+	text "I see you haven't"
+	line "forgotten him!"
+	
+	para "Yes, his name is"
+	line "indeed <GREEN>!"
 	prompt
 
 _OakText9F:
-	text "This is your best"
-	line "friend."
+	text "This young woman"
+	line "is your neighbor."
 
 	para "She's been your"
-	line "rival since the"
-	cont "two of you were"
-	cont "babies."
+	line "best friend and"
+	cont "rival ever since"
+	cont "you were kids."
 
 	para "You remember her"
 	line "name, don't you?"
 	done
 
 _OakText10F:
-	text "That's absolutely"
-	line "correct! Her name"
-	cont "is <GREEN>!"
+	text "I see you haven't"
+	line "forgotten her!"
+	
+	para "Yes, her name is"
+	line "indeed <GREEN>!"
 	prompt
 
 UnknownText_0x1c40e6: ; 0x1c40e6
-	text "The clock's time"
-	line "may be wrong."
+	text "The flow of time"
+	line "is unstable."
 
 	para "Please reset the"
-	line "time."
+	line "clock to fix it."
 	prompt
 ; 0x1c411c
 
 UnknownText_0x1c411c: ; 0x1c411c
 	text "Set with the"
-	line "Control Pad."
-
-	para "Confirm: A Button"
-	line "Cancel:  B Button"
+	line "CONTROL PAD."
 	done
 ; 0x1c415b
 
 UnknownText_0x1c415b: ; 0x1c415b
-	text "Is this OK?"
+	text "Is this correct?"
 	done
 ; 0x1c4168
 
 UnknownText_0x1c4168: ; 0x1c4168
-	text "The clock has been"
-	line "reset."
+	text "The flow of time"
+	line "was restored."
 	done
 ; 0x1c4183
 
 UnknownText_0x1c4183: ; 0x1c4183
-	text "Too much time has"
-	line "elapsed. Please"
-	cont "try again."
+	text "Sorry, could you"
+	line "try that again?"
 	prompt
 ; 0x1c41b1
 
@@ -117,7 +131,7 @@ UnknownText_0x1c41e6: ; 0x1c41e6
 	text "Your friend's"
 	line "@"
 	text_from_ram StringBuffer1
-	text " appears"
+	text " seems"
 	cont "to be abnormal!"
 	prompt
 ; 0x1c4212
@@ -135,9 +149,8 @@ UnknownText_0x1c4212: ; 0x1c4212
 UnknownText_0x1c422a: ; 0x1c422a
 	text "To enter a mobile"
 	line "battle, you must"
-
-	para "pick a team of"
-	line "three #MON."
+	cont "pick a team of"
+	cont "three #MON."
 
 	para "Is that OK?"
 	done
@@ -156,24 +169,20 @@ UnknownText_0x1c4298: ; 0x1c4298
 
 	para "The maximum daily"
 	line "play time is ten"
-
-	para "minutes for each"
-	line "linked player."
+	cont "minutes for each"
+	cont "linked player."
 
 	para "If a battle isn't"
 	line "finished within"
-
-	para "the time limit,"
-	line "the player with"
-
-	para "the fewest fainted"
-	line "#MON wins."
+	cont "the time limit,"
+	cont "the player with"
+	cont "the least fainted"
+	cont "#MON wins."
 
 	para "If tied, the team"
 	line "that lost the"
-
-	para "least amount of HP"
-	line "wins."
+	cont "lowest amount of"
+	cont "HP wins."
 	done
 ; 0x1c439c
 
@@ -236,7 +245,7 @@ UnknownText_0x1c44e7: ; 0x1c44e7
 ; 0x1c4508
 
 UnknownText_0x1c4508: ; 0x1c4508
-	text "Pick three #MON"
+	text "Choose 3 #MON"
 	line "for battle."
 	done
 ; 0x1c4525
@@ -251,71 +260,65 @@ UnknownText_0x1c4525: ; 0x1c4525
 
 UnknownText_0x1c454b: ; 0x1c454b
 	text "Would you like to"
-	line "save the game?"
+	line "SAVE the game?"
 	done
 ; 0x1c456d
 
 UnknownText_0x1c456d: ; 0x1c456d
-	text "SAVING<...> DON'T TURN"
-	line "OFF THE POWER."
+	text "SAVING<...> Don't turn"
+	line "off the power!"
 	done
 ; 0x1c4590
 
 UnknownText_0x1c4590: ; 0x1c4590
-	text $52, " saved"
-	line "the game."
+	text "You're filled with"
+	line "determination!"
 	done
 ; 0x1c45a3
 
 UnknownText_0x1c45a3: ; 0x1c45a3
-	text "There is already a"
-	line "save file. Is it"
-	cont "OK to overwrite?"
+	text "Overwrite the old"
+	line "SAVE file?"
 	done
 ; 0x1c45d9
 
 UnknownText_0x1c45d9: ; 0x1c45d9
-	text "There is another"
-	line "save file. Is it"
-	cont "OK to overwrite?"
+	text "Overwrite the old"
+	line "SAVE file?"
 	done
 ; 0x1c460d
 
 UnknownText_0x1c460d: ; 0x1c460d
-	text "The save file is"
+	text "The SAVE file is"
 	line "corrupted!"
 	prompt
 ; 0x1c462a
 
 UnknownText_0x1c462a: ; 0x1c462a
-	text "When you change a"
-	line "#MON BOX, data"
-	cont "will be saved. OK?"
+	text "Your game will"
+	line "be saved. OK?"
 	done
 ; 0x1c465f
 
 UnknownText_0x1c465f: ; 0x1c465f
-	text "Each time you move"
-	line "a #MON, data"
-	cont "will be saved. OK?"
+	text "Your game will"
+	line "be saved. OK?"
 	done
 ; 0x1c4693
 
 _Text_DeleteBox:
-	text "When releasing the"
-	line "whole BOX, data"
-	cont "will be saved. OK?"
+	text "Your game will"
+	line "be saved. OK?"
 	done
 
 UnknownText_0x1c4693: ; 0x1c4693
-	text "The window save"
-	line "area was exceeded."
-	done
+	text "Window save area"
+	line "was exceeded."
 ; 0x1c46b7
 
 UnknownText_0x1c46b7: ; 0x1c46b7
-	text "No windows avail-"
-	line "able for popping."
+	text "No windows can be"
+	line "popped right now."
 	done
 ; 0x1c46dc
 
@@ -340,7 +343,7 @@ UnknownText_0x1c4706:: ; 0x1c4706
 ; 0x1c4719
 
 UnknownText_0x1c4719:: ; 0x1c4719
-	text $52, " received"
+	text $52, " got the"
 	line "@"
 	text_from_ram StringBuffer4
 	text "."
@@ -352,16 +355,16 @@ MultipleGetItemText::
 	deciram wd10c, $13
 	text " @"
 	text_from_ram StringBuffer4
-	text "S."
+	text "s."
 	done
 ; 0x1c472c
 
 UnknownText_0x1c472c:: ; 0x1c472c
-	text $52, " put the"
-	line "@"
+	text "The @"
 	text_from_ram StringBuffer1
-	text " in"
-	cont "the @"
+	text ""
+	line "was stored in the"
+	cont " @"
 	text_from_ram StringBuffer3
 	text "."
 	prompt
@@ -376,8 +379,8 @@ UnknownText_0x1c474b:: ; 0x1c474b
 ; 0x1c475f
 
 UnknownText_0x1c475f: ; 0x1c475f
-	text "I see all."
-	line "I know all<...>"
+	text "I see all<...>"
+	line "I know all."
 
 	para "Certainly, I know"
 	line "of your #MON!"
@@ -405,21 +408,22 @@ UnknownText_0x1c47d4: ; 0x1c47d4
 ; 0x1c47fa
 
 UnknownText_0x1c47fa: ; 0x1c47fa
-	text "The time was"
+	text "The time was<...>"
 	line "@"
 	text_from_ram wd01f
 	text "!"
 
-	para "Its level was @"
+	para "Its level was<...> @"
 	text_from_ram wd036
 	text "!"
 
-	para "Am I good or what?"
+	para "Well? Am I good"
+	line "or what?"
 	prompt
 ; 0x1c4837
 
 UnknownText_0x1c4837: ; 0x1c4837
-	text "Hm<...> @"
+	text "Hmm<...> @"
 	text_from_ram wd003
 	text ""
 	line "came from @"
@@ -444,9 +448,10 @@ UnknownText_0x1c487f: ; 0x1c487f
 
 	para "I don't understand"
 	line "how, but it is"
+	cont "incredible!"
 
-	para "incredible!"
-	line "You are special."
+	para "You must be"
+	line "someone special<...>"
 
 	para "I can't tell where"
 	line "you met it, but it"
@@ -454,17 +459,17 @@ UnknownText_0x1c487f: ; 0x1c487f
 	text_from_ram wd036
 	text "."
 
-	para "Am I good or what?"
+	para "Well? Am I good"
+	line "or what?"
 	prompt
 ; 0x1c491d
 
 UnknownText_0x1c491d: ; 0x1c491d
 	text "Hey!"
+	line "That's an EGG!"
 
-	para "That's an EGG!"
-
-	para "You can't say that"
-	line "you've met it yet<...>"
+	para "You can't exactly"
+	line "say you've met it<...>"
 	done
 ; 0x1c4955
 
@@ -475,20 +480,15 @@ UnknownText_0x1c4955: ; 0x1c4955
 ; 0x1c497a
 
 UnknownText_0x1c497a: ; 0x1c497a
-	text "Incidentally<...>"
-
-	para "It would be wise"
+	text "It would be wise"
 	line "to raise your"
-
-	para "#MON with a"
-	line "little more care."
+	cont "#MON with a"
+	cont "little more care."
 	done
 ; 0x1c49c6
 
 UnknownText_0x1c49c6: ; 0x1c49c6
-	text "Incidentally<...>"
-
-	para "It seems to have"
+	text "It seems to have"
 	line "grown a little."
 
 	para "@"
@@ -500,9 +500,7 @@ UnknownText_0x1c49c6: ; 0x1c49c6
 ; 0x1c4a21
 
 UnknownText_0x1c4a21: ; 0x1c4a21
-	text "Incidentally<...>"
-
-	para "@"
+	text "@"
 	text_from_ram wd003
 	text " has"
 	line "grown. It's gained"
@@ -511,35 +509,29 @@ UnknownText_0x1c4a21: ; 0x1c4a21
 ; 0x1c4a5b
 
 UnknownText_0x1c4a5b: ; 0x1c4a5b
-	text "Incidentally<...>"
-
-	para "It certainly has"
+	text "It certainly has"
 	line "grown mighty!"
 
 	para "This @"
 	text_from_ram wd003
 	text ""
 	line "must have come"
-
-	para "through numerous"
-	line "#MON battles."
+	cont "through in many"
+	cont "#MON battles."
 
 	para "It looks brimming"
-	line "with confidence."
+	line "with confidence!"
 	done
 ; 0x1c4ae5
 
 UnknownText_0x1c4ae5: ; 0x1c4ae5
-	text "Incidentally<...>"
-
-	para "I'm impressed by"
+	text "I'm impressed by"
 	line "your dedication."
 
 	para "It's been a long"
 	line "time since I've"
-
-	para "seen a #MON as"
-	line "mighty as this"
+	cont "seen a #MON as"
+	cont "mighty as this"
 	cont "@"
 	text_from_ram wd003
 	text "."
@@ -547,15 +539,16 @@ UnknownText_0x1c4ae5: ; 0x1c4ae5
 	para "I'm sure that"
 	line "seeing @"
 	text_from_ram wd003
-	text $51
+	text $55
 	db "in battle would"
-	line "excite anyone."
+	cont "excite anyone!"
 	done
 ; 0x1c4b92
 
 UnknownText_0x1c4b92: ; 0x1c4b92
 	text "Congratulations!"
-	line "Your @"
+
+	para "Your @"
 	text_from_ram StringBuffer2
 	db "@"
 ; 0x1c4bae
@@ -565,9 +558,9 @@ UnknownText_0x1c4bae: ; 0x1c4bae
 ; 0x1c4baf
 
 UnknownText_0x1c4baf: ; 0x1c4baf
-	text $51
+	text $4f
 	db "evolved into"
-	line "@"
+	cont "@"
 	text_from_ram StringBuffer1
 	text "!"
 	done
@@ -598,7 +591,7 @@ UnknownText_0x1c4c08: ; 0x1c4c08
 	deciram wd10c, $12
 	text " @"
 	text_from_ram StringBuffer2
-	text "(S)"
+	text "(s)"
 	line "will be ¥@"
 	deciram $ffc3, $36
 	text "."
@@ -606,18 +599,17 @@ UnknownText_0x1c4c08: ; 0x1c4c08
 ; 0x1c4c28
 
 UnknownText_0x1c4c28: ; 0x1c4c28
-	text "Hello, dear."
+	text "Hello, dear<...>"
 
-	para "I sell inexpensive"
-	line "herbal medicine."
+	para "I sell discount"
+	line "herbal medicine<...>"
 
 	para "They're good, but"
-	line "a trifle bitter."
+	line "a trifle bitter<...>"
 
 	para "Your #MON may"
-	line "not like them."
-
-	para "Hehehehe<...>"
+	line "not like them<...>"
+	cont "Hehehehe<...>"
 	done
 ; 0x1c4ca3
 
@@ -630,7 +622,7 @@ UnknownText_0x1c4cae: ; 0x1c4cae
 	deciram wd10c, $12
 	text " @"
 	text_from_ram StringBuffer2
-	text "(S)"
+	text "(s)"
 	line "will be ¥@"
 	deciram $ffc3, $36
 	text "."
@@ -638,25 +630,25 @@ UnknownText_0x1c4cae: ; 0x1c4cae
 ; 0x1c4cce
 
 UnknownText_0x1c4cce: ; 0x1c4cce
-	text "Thank you, dear."
+	text "Thank you, dear<...>"
 	line "Hehehehe<...>"
 	done
 ; 0x1c4cea
 
 UnknownText_0x1c4cea: ; 0x1c4cea
 	text "Oh? Your PACK is"
-	line "full, dear."
+	line "full, dear<...>"
 	done
 ; 0x1c4d08
 
 UnknownText_0x1c4d08: ; 0x1c4d08
 	text "Hehehe<...> You don't"
-	line "have the money."
+	line "have the money<...>"
 	done
 ; 0x1c4d2a
 
 UnknownText_0x1c4d2a: ; 0x1c4d2a
-	text "Come again, dear."
+	text "Come again, dear<...>"
 	line "Hehehehe<...>"
 	done
 ; 0x1c4d47
@@ -667,9 +659,8 @@ UnknownText_0x1c4d47: ; 0x1c4d47
 
 	para "I sell rare items"
 	line "that nobody else"
-
-	para "carries--but only"
-	line "one of each item."
+	cont "carries--but only"
+	cont "one of each item!"
 	done
 ; 0x1c4db0
 
@@ -683,7 +674,7 @@ UnknownText_0x1c4db0: ; 0x1c4db0
 ; 0x1c4dcd
 
 UnknownText_0x1c4dcd: ; 0x1c4dcd
-	text "Thanks."
+	text "Thanks!"
 	done
 ; 0x1c4dd6
 
@@ -694,21 +685,20 @@ UnknownText_0x1c4dd6: ; 0x1c4dd6
 ; 0x1c4df7
 
 UnknownText_0x1c4df7: ; 0x1c4df7
-	text "You bought that"
-	line "already. I'm all"
-	cont "sold out of it."
+	text "You bought the"
+	line "only one I had!"
 	done
 ; 0x1c4e28
 
 UnknownText_0x1c4e28: ; 0x1c4e28
 	text "Uh-oh, you're"
-	line "short on funds."
+	line "short on funds!"
 	done
 ; 0x1c4e46
 
 UnknownText_0x1c4e46: ; 0x1c4e46
 	text "Come by again"
-	line "sometime."
+	line "sometime!"
 	done
 ; 0x1c4e5f
 
@@ -727,7 +717,7 @@ UnknownText_0x1c4e89: ; 0x1c4e89
 	deciram wd10c, $12
 	text " @"
 	text_from_ram StringBuffer2
-	text "(S)"
+	text "(s)"
 	line "will cost ¥@"
 	deciram $ffc3, $36
 	text "."
@@ -735,7 +725,7 @@ UnknownText_0x1c4e89: ; 0x1c4e89
 ; 0x1c4eab
 
 UnknownText_0x1c4eab: ; 0x1c4eab
-	text "Thanks much!"
+	text "Thanks a bunch."
 	done
 ; 0x1c4eb9
 
@@ -785,20 +775,20 @@ UnknownText_0x1c4f62: ; 0x1c4f62
 ; 0x1c4f80
 
 UnknownText_0x1c4f80: ; 0x1c4f80
-	text "Here you are."
+	text "Here you are!"
 	line "Thank you!"
 	done
 ; 0x1c4f9a
 
 UnknownText_0x1c4f9a: ; 0x1c4f9a
 	text "You don't have"
-	line "enough money."
+	line "enough money!"
 	done
 ; 0x1c4fb7
 
 UnknownText_0x1c4fb7: ; 0x1c4fb7
 	text "You can't carry"
-	line "any more items."
+	line "any more items!"
 	done
 ; 0x1c4fd7
 
@@ -809,7 +799,7 @@ UnknownText_0x1c4fd7: ; 0x1c4fd7
 ; 0x1c4ff9
 
 UnknownText_0x1c4ff9: ; 0x1c4ff9
-	text "Please come again!"
+	text "Come again!"
 	done
 ; 0x1c500d
 
@@ -821,8 +811,8 @@ UnknownText_0x1c500d: ; 0x1c500d
 
 _Text_PremierBallBonus:
 	text "You also get a"
-	line "PREMIER BALL as an"
-	cont "added bonus."
+	line "PREMIER BALL as"
+	cont "an added bonus."
 	done
 
 UnknownText_0x1c502e: ; 0x1c502e
@@ -831,7 +821,7 @@ UnknownText_0x1c502e: ; 0x1c502e
 	text " for"
 	line "@"
 	text_from_ram StringBuffer2
-	text "(S)."
+	text "(s)."
 	done
 ; 0x1c5049
 
@@ -848,7 +838,7 @@ UnknownText_0x1c505e: ; 0x1c505e
 
 UnknownText_0x1c5066: ; 0x1c5066
 	text "Not enough"
-	line "coins."
+	line "coins!"
 	prompt
 ; 0x1c5079
 
@@ -878,11 +868,8 @@ UnknownText_0x1c50bb: ; 0x1c50bb
 
 _MobileStadiumEntryText: ; 0x1c50c2
 	text "Data for use in"
-	line "the MOBILE STADIUM"
-
-	para "of the N64 #MON"
-	line "STADIUM 2 can be"
-	cont "read here."
+	line "#MON STADIUM 2"
+	cont "can be read here."
 
 	para "Read the data?"
 	done
@@ -899,7 +886,7 @@ _MobileStadiumSuccessText: ; 0x1c5121
 ; 0x1c5182
 
 UnknownText_0x1c5182: ; 0x1c5182
-	text "Clock time unknown"
+	text "?????"
 	done
 ; 0x1c5196
 
@@ -916,7 +903,7 @@ UnknownText_0x1c51b9: ; 0x1c51b9
 ; 0x1c51d7
 
 UnknownText_0x1c51d7: ; 0x1c51d7
-	text "Pick three #MON"
+	text "Choose 3 #MON"
 	line "for battle."
 	prompt
 ; 0x1c51f4
@@ -926,17 +913,18 @@ UnknownText_0x1c51f4: ; 0x1c51f4
 	text ","
 	line "@"
 	text_from_ram wd00c
-	text " and"
+	text ", and"
 	cont "@"
 	text_from_ram wd012
 	text "."
 
-	para "Use these three?"
+	para "You'll use those"
+	line "three #MON?"
 	done
 ; 0x1c521c
 
 UnknownText_0x1c521c: ; 0x1c521c
-	text "Only three #MON"
+	text "Only 3 #MON"
 	line "may enter."
 	prompt
 ; 0x1c5238
@@ -987,9 +975,8 @@ UnknownText_0x1c5394: ; 0x1c5394
 UnknownText_0x1c53ee: ; 0x1c53ee
 	text "If the CARD FOLDER"
 	line "is deleted, all"
-
-	para "its CARDS and the"
-	line "PASSCODE will also"
+	cont "its CARDS and the"
+	cont "PASSCODE will also"
 	cont "be deleted."
 
 	para "Beware--a deleted"
@@ -1073,31 +1060,20 @@ UnknownText_0x1c55d6: ; 0x1c55d6
 ; 0x1c55db
 
 UnknownText_0x1c55db: ; 0x1c55db
-	text "Password OK."
-	line "Select CONTINUE &"
-	cont "reset settings."
-	prompt
-; 0x1c560b
-
-UnknownText_0x1c560b: ; 0x1c560b
-	text "Wrong password!"
+	text "Select CONTINUE"
+	line "to set the time."
 	prompt
 ; 0x1c561c
 
 UnknownText_0x1c561c: ; 0x1c561c
-	text "Reset the clock?"
-	done
-; 0x1c562e
-
-UnknownText_0x1c562e: ; 0x1c562e
-	text "Please enter the"
-	line "password."
+	text "You want to reset"
+	line "the game's clock?"
 	done
 ; 0x1c564a
 
 UnknownText_0x1c564a: ; 0x1c564a
-	text "Clear all save"
-	line "data?"
+	text "You want to ERASE"
+	line "your SAVE file?"
 	done
 ; 0x1c5660
 
@@ -1162,7 +1138,7 @@ UnknownText_0x1c56c9: ; 0x1c56c9
 ; 0x1c5740
 
 UnknownText_0x1c5740: ; 0x1c5740
-	text "1, 2 and<...>@"
+	text "1, 2, and<...>@"
 	interpret_data
 	db "@"
 ; 0x1c574d
@@ -1188,7 +1164,7 @@ UnknownText_0x1c574e: ; 0x1c574e
 
 UnknownText_0x1c5772: ; 0x1c5772
 	text "HM moves can't be"
-	line "forgotten now."
+	line "forgotten."
 	prompt
 ; 0x1c5793
 
@@ -1199,17 +1175,17 @@ UnknownText_0x1c5793: ; 0x1c5793
 ; 0x1c57ab
 
 UnknownText_0x1c57ab: ; 0x1c57ab
-	text "Not enough coins<...>"
+	text "Not enough coins!"
 	prompt
 ; 0x1c57be
 
 UnknownText_0x1c57be: ; 0x1c57be
-	text "Choose a card."
+	text "Choose a card!"
 	done
 ; 0x1c57ce
 
 UnknownText_0x1c57ce: ; 0x1c57ce
-	text "Place your bet."
+	text "Place your bet!"
 	done
 ; 0x1c57df
 
@@ -1255,7 +1231,7 @@ UnknownText_0x1c5827: ; 0x1c5827
 ; 0x1c5847
 
 UnknownText_0x1c5847: ; 0x1c5847
-	text "Whom do you want"
+	text "Who do you want"
 	line "to call?"
 	done
 ; 0x1c5862
@@ -1267,7 +1243,7 @@ UnknownText_0x1c5862: ; 0x1c5862
 ; 0x1c587d
 
 UnknownText_0x1c587d: ; 0x1c587d
-	text "Delete this stored"
+	text "Delete the stored"
 	line "phone number?"
 	done
 ; 0x1c589f
@@ -1303,7 +1279,7 @@ UnknownText_0x1c58ff: ; 0x1c58ff
 ; 0x1c591a
 
 UnknownText_0x1c591a: ; 0x1c591a
-	text "Oh. Please come"
+	text "Oh<...> Please come"
 	line "back again!"
 	done
 ; 0x1c5937
@@ -1320,8 +1296,8 @@ UnknownText_0x1c5944: ; 0x1c5944
 ; 0x1c5962
 
 UnknownText_0x1c5962: ; 0x1c5962
-	text "Please return when"
-	line "you're ready."
+	text "Please, return"
+	line "when you're ready."
 	done
 ; 0x1c5983
 
@@ -1383,7 +1359,7 @@ UnknownText_0x1c5a90: ; 0x1c5a90
 ; 0x1c5aa6
 
 UnknownText_0x1c5aa6: ; 0x1c5aa6
-	text "Oh no! The #MON"
+	text "Darn! The #MON"
 	line "broke free!"
 	prompt
 ; 0x1c5ac3
@@ -1431,15 +1407,14 @@ UnknownText_0x1c5b37: ; 0x1c5b37
 UnknownText_0x1c5b38: ; 0x1c5b38
 	text_from_ram wd050
 	text " was"
-	line "sent to BILL's PC."
+	line "sent to storage."
 	prompt
 ; 0x1c5b53
 
 UnknownText_0x1c5b38_2: ; 0x1c5b38
 	text_from_ram wd050
 	text " was"
-	line "sent to SOMEONE's"
-	cont "PC."
+	line "sent to storage."
 	prompt
 ; 0x1c5b53
 
@@ -1453,7 +1428,7 @@ _SentToBoxNumberText:
 UnknownText_0x1c5b53: ; 0x1c5b53
 	text_from_ram EnemyMonNick
 	text "'s data"
-	line "was newly added to", $55
+	line "was registered to", $55
 	db "the #DEX.@"
 	sound0x2C
 	text_waitsfx
@@ -1465,7 +1440,7 @@ UnknownText_0x1c5b7e: ; 0x1c5b7e
 ; 0x1c5b7f
 
 UnknownText_0x1c5b7f: ; 0x1c5b7f
-	text "Give a nickname to"
+	text "Give nickname to"
 	line "@"
 	text_from_ram StringBuffer1
 	text "?"
@@ -1488,18 +1463,17 @@ UnknownText_0x1c5bac: ; 0x1c5bac
 ; 0x1c5bcd
 
 UnknownText_0x1c5bcd: ; 0x1c5bcd
-	text "The REPEL used"
-	line "earlier is still"
-	cont "in effect."
+	text "REPEL is already"
+	line "in effect."
 	prompt
 ; 0x1c5bf9
 
 UnknownText_0x1c5bf9: ; 0x1c5bf9
-	text "Played the #"
-	line "FLUTE."
+	text $52, " played the"
+	line "# FLUTE.@"
 
-	para "Now, that's a"
-	line "catchy tune!"
+	para "Now that's what"
+	line "you call music!"
 	prompt
 ; 0x1c5c28
 
@@ -1529,7 +1503,7 @@ UnknownText_0x1c5c5e: ; 0x1c5c5e
 ; 0x1c5c7b
 
 UnknownText_0x1c5c7b: ; 0x1c5c7b
-	text "Coins:"
+	text "COINS:"
 	line "@"
 	deciram Coins, $25
 	db "@"
@@ -1566,7 +1540,9 @@ UnknownText_0x1c5cdd: ; 0x1c5cdd
 ; 0x1c5cf1
 
 UnknownText_0x1c5cf1: ; 0x1c5cf1
-	text "PP was restored."
+	text_from_ram StringBuffer2
+	text "'s PP"
+	line "was restored."
 	prompt
 ; 0x1c5d03
 
@@ -1594,9 +1570,8 @@ UnknownText_0x1c5d50: ; 0x1c5d50
 ; 0x1c5d6e
 
 UnknownText_0x1c5d6e: ; 0x1c5d6e
-	text "OAK: ", $52, "!"
-	line "This isn't the"
-	cont "time to use that!"
+	text "This isn't the"
+	line "time to use that!"
 	prompt
 ; 0x1c5d97
 
@@ -1638,9 +1613,8 @@ UnknownText_0x1c5e1d: ; 0x1c5e1d
 ; 0x1c5e3a
 
 UnknownText_0x1c5e3a: ; 0x1c5e3a
-	text "The #MON BOX"
-	line "is full. That"
-	cont "can't be used now."
+	text "It can't be used."
+	line "The BOX is full."
 	prompt
 ; 0x1c5e68
 
@@ -1680,12 +1654,12 @@ UnknownText_0x1c5ea8: ; 0x1c5ea8
 
 UnknownText_0x1c5eba: ; 0x1c5eba
 	text "That #MON knows"
-	line "only one move."
+	line "only one move!"
 	done
 ; 0x1c5eda
 
 UnknownText_0x1c5eda: ; 0x1c5eda
-	text "Oh, make it forget"
+	text "So, make it forget"
 	line "@"
 	text_from_ram StringBuffer1
 	text "?"
@@ -1693,7 +1667,7 @@ UnknownText_0x1c5eda: ; 0x1c5eda
 ; 0x1c5ef5
 
 UnknownText_0x1c5ef5: ; 0x1c5ef5
-	text "Done! Your #MON"
+	text "OK! Your #MON"
 	line "forgot the move."
 	done
 ; 0x1c5f17
@@ -1705,8 +1679,9 @@ UnknownText_0x1c5f17: ; 0x1c5f17
 ; 0x1c5f36
 
 UnknownText_0x1c5f36: ; 0x1c5f36
-	text "No? Come visit me"
-	line "again."
+	text "Did you forget"
+	line "which move you"
+	cont "wanted to forget?"
 	done
 ; 0x1c5f50
 
@@ -1734,39 +1709,37 @@ UnknownText_0x1c5fd1: ; 0x1c5fd1
 ; 0x1c5fde
 
 UnknownText_0x1c5fde: ; 0x1c5fde
-	text " DST,"
-	line "is that OK?"
+	text " DST<...>"
+	line "Is that right?"
 	done
 ; 0x1c5ff1
 
 UnknownText_0x1c5ff1: ; 0x1c5ff1
-	text ","
-	line "is that OK?"
+	text "<...>"
+	line "Is that right?"
 	done
 ; 0x1c6000
 
 UnknownText_0x1c6000: ; 0x1c6000
-	text "Do you want to"
-	line "switch to Daylight"
-	cont "Saving Time?"
+	text "Is it daylight"
+	line "saving time now?"
 	done
 ; 0x1c6030
 
 UnknownText_0x1c6030: ; 0x1c6030
 	text "I set the clock"
-	line "forward by one"
-	cont "hour."
+	line "forward one hour."
 	prompt
 ; 0x1c6056
 
 UnknownText_0x1c6056: ; 0x1c6056
-	text "Is Daylight Saving"
-	line "Time over?"
+	text "Is daylight saving"
+	line "time over?"
 	done
 ; 0x1c6075
 
 UnknownText_0x1c6075: ; 0x1c6075
-	text "I put the clock"
+	text "I set the clock"
 	line "back one hour."
 	prompt
 ; 0x1c6095
@@ -1774,23 +1747,22 @@ UnknownText_0x1c6075: ; 0x1c6075
 UnknownText_0x1c6095: ; 0x1c6095
 	text "Do you want to"
 	line "adjust your clock"
-
-	para "for Daylight"
-	line "Saving Time?"
+	cont "for daylight"
+	cont "saving time?"
 	done
 ; 0x1c60d1
 
 UnknownText_0x1c60d1: ; 0x1c60d1
-	text "I lost the in-"
-	line "struction booklet"
-	cont "for the #GEAR."
+	text "I can't change the"
+	line "clock within an"
+	cont "hour of midnight."
 
-	para "Come back again in"
-	line "a while."
+	para "Let's wait until"
+	line "after 1:00, OK?"
 	prompt
 ; 0x1c611e
 
 _LovelyWaterText:
-	text "Waves are crashing"
+	text "The waves crash"
 	line "upon the shore."
 	done
