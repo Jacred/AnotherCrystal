@@ -288,7 +288,7 @@ AI_Items: ; 39196
 	dbw FULL_RESTORE, .FullRestore
 	dbw MAX_POTION,   .MaxPotion
 	dbw HYPER_POTION, .HyperPotion
-	dbw SUPER_POTION, .SuperPotion
+	dbw FRESH_WATER,  .SuperPotion
 	dbw POTION,       .Potion
 	dbw X_ACCURACY,   .XAccuracy
 	dbw FULL_HEAL,    .FullHeal
@@ -402,7 +402,7 @@ AI_Items: ; 39196
 .HyperPotion: ; 38284
 	call .HealItem
 	jp c, .DontUse
-	ld b, 200
+	ld b, 120
 	call Function383f4
 	jp .Use
 ; 38292 (e:4292)
@@ -593,7 +593,7 @@ ELSE
 	dbw FULL_RESTORE, Function383b5
 	dbw MAX_POTION,   Function383ae
 	dbw HYPER_POTION, Function383f4
-	dbw SUPER_POTION, Function383ee
+	dbw FRESH_WATER,  Function383ee
 	dbw POTION,       Function383e8
 	dbw X_ACCURACY,   Function384f7
 	dbw FULL_HEAL,    Function383a3
@@ -683,13 +683,13 @@ Function383e8: ; 383e8
 	jr Function383f8
 
 Function383ee: ; 383ee
-	ld a, SUPER_POTION
+	ld a, FRESH_WATER
 	ld b, 50
 	jr Function383f8
 
 Function383f4: ; 383f4 (e:43f4)
 	ld a, HYPER_POTION
-	ld b, 200
+	ld b, 120
 
 Function383f8: ; 383f8
 	ld [wd1f1], a
