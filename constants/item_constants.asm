@@ -235,7 +235,7 @@
 	add_tm GUNK_SHOT
 	add_tm SEISMIC_TOSS
 	add_tm SWORDS_DANCE
-	add_tm STRING_SHOT
+	add_tm DREAM_EATER
 	add_tm DARK_PULSE
 	add_tm REST
 	add_tm ATTRACT
