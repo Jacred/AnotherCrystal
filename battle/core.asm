@@ -904,11 +904,11 @@ SometimesFleeMons: ; 3c59a
 	db TANGELA
 	db MR__MIME
 	db EEVEE
+	db UMBREON
 	db PORYGON
 	db DRATINI
 	db DRAGONAIR
 	db TOGETIC
-	db UMBREON
 	db UNOWN
 	db SNUBBULL
 	db HERACROSS
@@ -916,13 +916,10 @@ SometimesFleeMons: ; 3c59a
 
 OftenFleeMons: ; 3c5a8
 	db CUBONE
-;	db ARTICUNO
-;	db ZAPDOS
-;	db MOLTRES
 	db QUAGSIRE
+	db TEDDIURSA
 	db DELIBIRD
 	db PHANPY
-	db TEDDIURSA
 	db -1
 
 AlwaysFleeMons: ; 3c5b1
@@ -980,7 +977,7 @@ MoveEffectPriorities: ; 3c5df
 	db EFFECT_ENDURE,       5
 	db EFFECT_EXTREMESPEED, 4
 	db EFFECT_PRIORITY_HIT, 3
-	db EFFECT_BIDE,			3
+	db EFFECT_BIDE,		3
 	db EFFECT_WHIRLWIND,    0
 	db EFFECT_COUNTER,      0
 	db EFFECT_MIRROR_COAT,  0
@@ -6618,28 +6615,36 @@ LoadEnemyMon: ; 3e8eb
 ; I will hijack this script to adjust the wild Pokemon's level.
 .WildItem
 ; Force Item1
-; Used for Ho-Oh, Lugia and Snorlax encounters
+; Used for boss encounters
 	ld a, [BattleType]
+	cp BATTLETYPE_ROAMING
+	jr z, .ForceItem1
+	cp BATTLETYPE_SHINY
+	jr z, .ForceItem1
 	cp BATTLETYPE_FORCEITEM
+	jr z, .ForceItem1
+	cp BATTLETYPE_CELEBI
+	jr z, .ForceItem1
+	cp BATTLETYPE_SUICUNE
 	jr z, .ForceItem1
 	cp BATTLETYPE_KANTOLEGEND
 	jr z, .ForceItem1
 
 ; Failing that, it's all up to chance
 ;  Effective chances:
-;    75% None
-;    23% Item1
-;     2% Item2
+;    50% None
+;    45% Item1
+;     5% Item2
 
-; 25% chance of getting an item
+; 50% chance of getting an item
 	call BattleRandom
-	cp $c0
+	cp $80
 	ld a, NO_ITEM
 	jr c, .UpdateItem
 
-; From there, an 8% chance for Item2
+; From there, an 10% chance for Item2
 	call BattleRandom
-	cp $14 ; 8% of 25% = 2% Item2
+	cp $19 ; 10% of 50% = 5% Item2
 	jr nc, .ForceItem1
 	ld a, [BaseItems + 1]
 	jr .UpdateItem
