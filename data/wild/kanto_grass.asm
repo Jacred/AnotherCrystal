@@ -1,63 +1,63 @@
 ; Kanto Pokémon in grass
 	map DIGLETTS_CAVE
 	db $0a ; encounter rates: morn/day/nite
-	db 64
-	db $00
+	db 38
+	db $10
 ;morning
-		db DIGLETT ;30
-		db DUGTRIO ;10
-		db DIGLETT ;10
-		db DIGLETT ;10
-		db DUGTRIO ;5
-		db DIGLETT ;5
-		db DIGLETT ;5
-		db DIGLETT ;5
-		db DIGLETT ;4
-		db DIGLETT ;4
-		db DIGLETT ;3
-		db DIGLETT ;3
-		db DIGLETT ;2
-		db DIGLETT ;2
+		db DIGLETT ;30		70% Diglett L38-42
+		db DIGLETT ;10		20% Diglett L43-47
+		db DIGLETT ;10		5% Dugtrio L43-47
+		db DIGLETT ;10		4% Dugtrio L48-52
+		db DIGLETT ;5		1% Dugtrio L53-57
+		db DIGLETT ;5		
+		db DIGLETT ;5		90% Diglett L38-47
+		db DUGTRIO ;5		10% Dugtrio L43-57
+		db DIGLETT ;4		
+		db DUGTRIO ;4		
+		db DIGLETT ;3		
+		db DIGLETT ;3		
+		db DIGLETT ;2		
+		db DIGLETT ;2		
 		db DIGLETT ;1
-		db DIGLETT ;1
+		db DUGTRIO ;1
 ;day
-		db DIGLETT ;30
-		db DUGTRIO ;10
-		db DIGLETT ;10
-		db DIGLETT ;10
-		db DUGTRIO ;5
-		db DIGLETT ;5
-		db DIGLETT ;5
-		db DIGLETT ;5
-		db DIGLETT ;4
-		db DIGLETT ;4
-		db DIGLETT ;3
-		db DIGLETT ;3
-		db DIGLETT ;2
-		db DIGLETT ;2
+		db DIGLETT ;30		70% Diglett L38-42
+		db DIGLETT ;10		20% Diglett L43-47
+		db DIGLETT ;10		5% Dugtrio L43-47
+		db DIGLETT ;10		4% Dugtrio L48-52
+		db DIGLETT ;5		1% Dugtrio L53-57
+		db DIGLETT ;5		
+		db DIGLETT ;5		90% Diglett L38-47
+		db DUGTRIO ;5		10% Dugtrio L43-57
+		db DIGLETT ;4		
+		db DUGTRIO ;4		
+		db DIGLETT ;3		
+		db DIGLETT ;3		
+		db DIGLETT ;2		
+		db DIGLETT ;2		
 		db DIGLETT ;1
-		db DIGLETT ;1
+		db DUGTRIO ;1
 ;night
-		db DIGLETT ;30
-		db DUGTRIO ;10
-		db DIGLETT ;10
-		db DIGLETT ;10
-		db DUGTRIO ;5
-		db DUGTRIO ;5
-		db DIGLETT ;5
-		db DIGLETT ;5
-		db DIGLETT ;4
-		db DIGLETT ;4
-		db DIGLETT ;3
-		db DIGLETT ;3
-		db DIGLETT ;2
-		db DIGLETT ;2
+		db DIGLETT ;30		70% Diglett L38-42
+		db DIGLETT ;10		20% Diglett L43-47
+		db DIGLETT ;10		5% Dugtrio L43-47
+		db DIGLETT ;10		4% Dugtrio L48-52
+		db DIGLETT ;5		1% Dugtrio L53-57
+		db DIGLETT ;5		
+		db DIGLETT ;5		90% Diglett L38-47
+		db DUGTRIO ;5		10% Dugtrio L43-57
+		db DIGLETT ;4		
+		db DUGTRIO ;4		
+		db DIGLETT ;3		
+		db DIGLETT ;3		
+		db DIGLETT ;2		
+		db DIGLETT ;2		
 		db DIGLETT ;1
-		db DIGLETT ;1
+		db DUGTRIO ;1
 
 	map ROCK_TUNNEL_1F
 	db $0f ; encounter rates: morn/day/nite
-	db 62
+	db 36
 	db $01
 ;morning
 		db ONIX ;20
@@ -113,7 +113,7 @@
 
 	map ROCK_TUNNEL_B1F
 	db $0f ; encounter rates: morn/day/nite
-	db 62
+	db 37
 	db $01
 ;morning
 		db ONIX ;20
@@ -169,118 +169,118 @@
 
 	map VICTORY_ROAD
 	db $0f ; encounter rates: morn/day/nite
-	db 56
+	db 44
 	db $03
 ;morning
 		db GRAVELER ;15
-		db GOLEM ;10
-		db RHYHORN ;10
-		db ONIX ;10
-		db SANDSLASH ;10
-		db GRAVELER ;5
-		db MACHOKE ;5
-		db MACHOKE ;5
-		db TYPHLOSION ;5
-		db TYPHLOSION ;5
-		db STEELIX ;5
-		db RHYDON ;5
-		db MAROWAK ;4
-		db MAROWAK ;3
-		db QUILAVA ;2
-		db QUILAVA ;1
-;day
-		db RHYHORN ;15
-		db RHYDON ;10
 		db GRAVELER ;10
 		db ONIX ;10
+		db RHYHORN ;10
+		db GOLBAT ;10
+		db SANDSLASH ;5
+		db MACHOKE ;5
+		db GOLEM ;5
+		db TYPHLOSION ;5
+		db RHYDON ;5
+		db URSARING ;5
+		db DONPHAN ;5
+		db MAROWAK ;4
+		db STEELIX ;3
+		db QUILAVA ;2
+		db SANDSLASH ;1
+;day
+		db GRAVELER ;15
+		db RHYHORN ;10
+		db ONIX ;10
+		db GOLBAT ;10
+		db MACHOKE ;10
+		db GRAVELER ;5
+		db RHYHORN ;5
+		db SANDSLASH ;5
+		db RHYDON ;5
+		db URSARING ;5
+		db DONPHAN ;5
+		db QUILAVA ;5
+		db GOLEM ;4
+		db TYPHLOSION ;3
+		db STEELIX ;2
+		db MAROWAK ;1
+;night
+		db GOLBAT ;15
 		db SANDSLASH ;10
+		db GRAVELER ;10
+		db ONIX ;10
+		db GRAVELER ;10
+		db ONIX ;5
 		db RHYHORN ;5
 		db MACHOKE ;5
-		db MACHOKE ;5
-		db MACHOKE ;5
-		db MACHOKE ;5
+		db URSARING ;5
+		db DONPHAN ;5
 		db GOLEM ;5
-		db QUILAVA ;5
-		db TYPHLOSION ;4
-		db STEELIX ;3
-		db MAROWAK ;2
-		db TYPHLOSION ;1
-;night
-		db ONIX ;15
-		db ONIX ;10
-		db GRAVELER ;10
-		db RHYHORN ;10
-		db SANDSLASH ;10
-		db SANDSLASH ;5
-		db SANDSLASH ;5
-		db MACHOKE ;5
-		db MACHOKE ;5
 		db STEELIX ;5
-		db RHYDON ;5
-		db GOLEM ;5
-		db QUILAVA ;4
-		db MAROWAK ;3
-		db STEELIX ;2
+		db RHYDON ;4
+		db QUILAVA ;3
+		db MAROWAK ;2
 		db TYPHLOSION ;1
 
 	map TOHJO_FALLS
 	db $0f ; encounter rates: morn/day/nite
-	db 53
-	db $01
-		db ZUBAT ;20
-		db GEODUDE ;20
+	db 36
+	db $03
+		db ZUBAT ;15
+		db ZUBAT ;10
+		db RATICATE ;10
 		db GOLBAT ;10
-		db GRAVELER ;10
+		db GEODUDE ;10
+		db RATICATE ;5
+		db GOLBAT ;5
+		db GRAVELER ;5
+		db MARILL ;5
 		db WARTORTLE ;5
-		db CROBAT ;5
-		db MARILL ;5
-		db MARILL ;5
-		db AZUMARILL ;4
+		db SLOWPOKE ;5
+		db RATTATA ;5
 		db PSYDUCK ;4
-		db PSYDUCK ;3
-		db GOLDUCK ;3
-		db WARTORTLE ;2
-		db WARTORTLE ;2
-		db AZUMARILL ;1
-		db WARTORTLE ;1
-;day
-		db GEODUDE ;20
-		db ZUBAT ;20
-		db PSYDUCK ;10
-		db GOLBAT ;10
-		db WARTORTLE ;5
-		db GRAVELER ;5
-		db GOLDUCK ;5
-		db GRAVELER ;5
-		db ZUBAT ;4
-		db CROBAT ;4
-		db WARTORTLE ;3
-		db PSYDUCK ;3
-		db WARTORTLE ;2
-		db PSYDUCK ;2
-		db GOLBAT ;1
-		db CROBAT ;1
-;night
-		db GEODUDE ;20
-		db WARTORTLE ;20
-		db GRAVELER ;10
-		db PSYDUCK ;10
-		db OCTILLERY ;5
-		db OCTILLERY ;5
-		db ZUBAT ;5
-		db MARILL ;5
-		db OCTILLERY ;4
-		db OCTILLERY ;4
-		db OCTILLERY ;3
 		db AZUMARILL ;3
-		db GOLDUCK ;2
-		db GOLDUCK ;2
-		db GOLBAT ;1
+		db CROBAT ;2
+		db GOLDUCK ;1
+;day
+		db ZUBAT ;15
+		db ZUBAT ;10
+		db RATICATE ;10
+		db GOLBAT ;10
+		db GEODUDE ;10
+		db RATICATE ;5
+		db GOLBAT ;5
+		db GRAVELER ;5
+		db WARTORTLE ;5
+		db RATTATA ;5
+		db SLOWPOKE ;5
+		db PSYDUCK ;5
+		db SLOWPOKE ;4
+		db GOLDUCK ;3
+		db CROBAT ;2
+		db PSYDUCK ;1
+;night
+		db RATICATE ;15
+		db ZUBAT ;10
+		db GOLBAT ;10
+		db GEODUDE ;10
+		db WARTORTLE ;10
+		db ZUBAT ;5
+		db SLOWPOKE ;5
+		db SLOWPOKE ;5
+		db OCTILLERY ;5
+		db GRAVELER ;5
+		db PSYDUCK ;5
+		db RATTATA ;5
+		db MARILL ;4
+		db GOLDUCK ;3
+		db AZUMARILL ;2
 		db CROBAT ;1
 
 	map ROUTE_1
 	db $19 ; encounter rates: morn/day/nite
-	db 54
+	db 28
 	db $00
 ;morning
 		db PIDGEY ;30
@@ -336,7 +336,7 @@
 
 	map ROUTE_2_NORTH
 	db $19 ; encounter rates: morn/day/nite
-	db 60
+	db 31
 	db $02
 ;morning
 		db NIDORAN_M ;20
@@ -392,7 +392,7 @@
 
 	map ROUTE_2_SOUTH
 	db $19 ; encounter rates: morn/day/nite
-	db 60
+	db 31
 	db $02
 ;morning
 		db NIDORAN_M ;20
@@ -448,7 +448,7 @@
 
 	map ROUTE_3
 	db $19 ; encounter rates: morn/day/nite
-	db 64
+	db 35
 	db $02
 ;morning
 		db SPEAROW ;20
@@ -504,7 +504,7 @@
 
 	map ROUTE_4
 	db $19 ; encounter rates: morn/day/nite
-	db 60
+	db 33
 	db $01
 ;morning
 		db SPEAROW ;20
@@ -560,7 +560,7 @@
 
 	map ROUTE_5
 	db $19 ; encounter rates: morn/day/nite
-	db 60
+	db 36
 	db $01
 ;morning
 		db NIDORINO ;20
@@ -616,7 +616,7 @@
 
 	map ROUTE_6
 	db $19 ; encounter rates: morn/day/nite
-	db 56
+	db 34
 	db $03
 ;morning
 		db PONYTA ;15
@@ -672,7 +672,7 @@
 
 	map ROUTE_7
 	db $19 ; encounter rates: morn/day/nite
-	db 59
+	db 37
 	db $01
 ;morning
 		db BELLSPROUT ;20
@@ -728,7 +728,7 @@
 
 	map ROUTE_8
 	db $19 ; encounter rates: morn/day/nite
-	db 59
+	db 37
 	db $02
 ;morning
 		db PRIMEAPE ;20
@@ -784,7 +784,7 @@
 
 	map ROUTE_9
 	db $19 ; encounter rates: morn/day/nite
-	db 63
+	db 39
 	db $01
 ;morning
 		db VOLTORB ;20
@@ -840,7 +840,7 @@
 
 	map ROUTE_10_NORTH
 	db $19 ; encounter rates: morn/day/nite
-	db 63
+	db 39
 	db $01
 ;morning
 		db MAGNEMITE ;20
@@ -896,7 +896,7 @@
 
 	map ROUTE_11
 	db $19 ; encounter rates: morn/day/nite
-	db 62
+	db 37
 	db $02
 ;morning
 		db IVYSAUR ;20
@@ -952,7 +952,7 @@
 
 	map ROUTE_13
 	db $19 ; encounter rates: morn/day/nite
-	db 61
+	db 42
 	db $01
 ;morning
 		db VENOMOTH ;20
@@ -1008,7 +1008,7 @@
 
 	map ROUTE_14
 	db $19 ; encounter rates: morn/day/nite
-	db 61
+	db 43
 	db $02
 ;morning
 		db EXEGGCUTE ;20
@@ -1064,7 +1064,7 @@
 
 	map ROUTE_15
 	db $19 ; encounter rates: morn/day/nite
-	db 61
+	db 42
 	db $02
 ;morning
 		db MACHOKE ;20
@@ -1120,7 +1120,7 @@
 
 	map ROUTE_16
 	db $19; encounter rates: morn/day/nite
-	db 60
+	db 43
 	db $02
 ;morning
 		db NIDOKING ;20
@@ -1234,7 +1234,7 @@
 
 	map ROUTE_18
 	db $19 ; encounter rates: morn/day/nite
-	db 61
+	db 43
 	db $02
 ;morning
 		db FEAROW ;20
@@ -1290,7 +1290,7 @@
 
 	map ROUTE_21
 	db $0f ; encounter rates: morn/day/nite
-	db 64
+	db 45
 	db $02
 ;morning
 		db TANGELA ;20
@@ -1346,7 +1346,7 @@
 
 	map ROUTE_22
 	db $19 ; encounter rates: morn/day/nite
-	db 58
+	db 30
 	db $02
 ;morning
 		db KOFFING ;20
@@ -1402,7 +1402,7 @@
 
 	map ROUTE_24
 	db $19 ; encounter rates: morn/day/nite
-	db 63
+	db 36
 	db $02
 ;morning
 		db BELLSPROUT ;20
@@ -1458,7 +1458,7 @@
 
 	map ROUTE_25
 	db $19 ; encounter rates: morn/day/nite
-	db 60
+	db 35
 	db $01
 ;morning
 		db ABRA ;20
@@ -1514,115 +1514,115 @@
 
 	map ROUTE_26
 	db $19 ; encounter rates: morn/day/nite
-	db 54
-	db $02
+	db 41
+	db $03
 	; morn
-		db CHANSEY ;20
-		db WARTORTLE ;15
-		db SANDSLASH ;10
-		db BLISSEY ;10
-		db JUMPLUFF ;10
-		db WARTORTLE ;5
-		db CHANSEY ;5
-		db QUAGSIRE ;5
-		db DODRIO ;6
-		db MEGANIUM ;4
-		db HOUNDOOM ;3
-		db POLIWRATH ;2
-		db DODRIO ;2
-		db MEGANIUM ;1
-		db MEGANIUM ;1
-		db MEGANIUM ;1
-	; day
-		db CHANSEY ;20
-		db WARTORTLE ;15
-		db CHANSEY ;10
-		db DODRIO ;10
-		db SANDSLASH ;10
-		db CHANSEY ;5
-		db CHANSEY ;5
-		db BLISSEY ;5
-		db MEGANIUM ;6
-		db MEGANIUM ;4
-		db BLISSEY ;3
-		db BLISSEY ;2
-		db BLISSEY ;2
-		db BLISSEY ;1
-		db BLISSEY ;1
-		db BLISSEY ;1
-	; nite
-		db GOLBAT ;20
-		db CHANSEY ;15
-		db SANDSLASH ;10
+		db SANDSLASH ;15
+		db DODUO ;10
+		db PONYTA ;10
+		db DODUO ;10
 		db WARTORTLE ;10
-		db QUAGSIRE ;10
+		db CHANSEY ;5
+		db CHANSEY ;5
+		db RATICATE ;5
 		db BLISSEY ;5
-		db POLIWRATH ;5
-		db CROBAT ;5
-		db HOUNDOOM ;6
-		db HOUNDOOM ;4
-		db MEGANIUM ;3
-		db CROBAT ;2
-		db DODRIO ;2
+		db JUMPLUFF ;5
+		db DODRIO ;5
+		db ARBOK ;5
+		db MEGANIUM ;4
+		db QUAGSIRE ;3
+		db HOUNDOOM ;2
 		db POLIWRATH ;1
-		db POLIWRATH ;1
-		db POLIWRATH ;1
+	; day
+		db SANDSLASH ;15
+		db DODUO ;10
+		db CHANSEY ;10
+		db DODUO ;10
+		db CHANSEY ;10
+		db PONYTA ;5
+		db PONYTA ;5
+		db RATICATE ;5
+		db DODRIO ;5
+		db MEGANIUM ;5
+		db ARBOK ;5
+		db BLISSEY ;5
+		db WARTORTLE ;4
+		db WARTORTLE ;3
+		db WARTORTLE ;2
+		db WARTORTLE ;1
+	; nite
+		db RATICATE ;15
+		db NOCTOWL ;10
+		db GOLBAT ;10
+		db SANDSLASH ;10
+		db QUAGSIRE ;10
+		db RATICATE ;5
+		db CHANSEY ;5
+		db BLISSEY ;5
+		db PONYTA ;5
+		db WARTORTLE ;5
+		db HOUNDOOM ;5
+		db ARBOK ;5
+		db POLIWRATH ;4
+		db CROBAT ;3
+		db MEGANIUM ;2
+		db DODRIO ;1
 
 	map ROUTE_27
 	db $19 ; encounter rates: morn/day/nite
-	db 52
-	db $02
+	db 40
+	db $03
 	; morn
-		db CHANSEY ;20
-		db WARTORTLE ;15
-		db SANDSLASH ;10
-		db BLISSEY ;10
-		db JUMPLUFF ;10
-		db WARTORTLE ;5
-		db CHANSEY ;5
-		db QUAGSIRE ;5
-		db DODRIO ;6
-		db MEGANIUM ;4
-		db HOUNDOOM ;3
-		db POLIWRATH ;2
-		db DODRIO ;2
-		db MEGANIUM ;1
-		db MEGANIUM ;1
-		db MEGANIUM ;1
-	; day
-		db CHANSEY ;20
-		db WARTORTLE ;15
+		db DODUO ;15
 		db CHANSEY ;10
-		db DODRIO ;10
-		db SANDSLASH ;10
-		db CHANSEY ;5
-		db CHANSEY ;5
+		db ARBOK ;10
+		db WARTORTLE ;10
+		db RATICATE ;10
+		db DODUO ;5
+		db DODRIO ;5
+		db SANDSLASH ;5
+		db QUAGSIRE ;5
+		db JUMPLUFF ;5
 		db BLISSEY ;5
-		db MEGANIUM ;6
+		db PONYTA ;5
 		db MEGANIUM ;4
+		db CHANSEY ;3
+		db HOUNDOOM ;2
+		db POLIWRATH ;1
+	; day
+		db DODUO ;15
+		db CHANSEY ;10
+		db RATICATE ;10
+		db CHANSEY ;10
+		db ARBOK ;10
+		db DODUO ;5
+		db DODRIO ;5
+		db SANDSLASH ;5
+		db MEGANIUM ;5
+		db PONYTA ;5
+		db WARTORTLE ;5
+		db WARTORTLE ;5
+		db BLISSEY ;4
 		db BLISSEY ;3
 		db BLISSEY ;2
-		db BLISSEY ;2
-		db BLISSEY ;1
-		db BLISSEY ;1
 		db BLISSEY ;1
 	; nite
-		db GOLBAT ;20
-		db CHANSEY ;15
-		db SANDSLASH ;10
-		db WARTORTLE ;10
+		db QUAGSIRE ;15
 		db QUAGSIRE ;10
+		db GOLBAT ;10
+		db NOCTOWL ;10
+		db CHANSEY ;10
+		db QUAGSIRE ;5
+		db SANDSLASH ;5
+		db WARTORTLE ;5
+		db HOUNDOOM ;5
+		db ARBOK ;5
+		db PONYTA ;5
 		db BLISSEY ;5
-		db POLIWRATH ;5
-		db CROBAT ;5
-		db HOUNDOOM ;6
-		db HOUNDOOM ;4
-		db MEGANIUM ;3
-		db CROBAT ;2
-		db DODRIO ;2
-		db POLIWRATH ;1
-		db POLIWRATH ;1
-		db POLIWRATH ;1
+		db POLIWRATH ;4
+		db CROBAT ;3
+		db MEGANIUM ;2
+		db DODRIO ;1
 
 	map ROUTE_28
 	db $19; encounter rates: morn/day/nite
@@ -1682,7 +1682,7 @@
 
 	map VIRIDIAN_FOREST
 	db $0a ; encounter rates: morn/day/nite
-	db 56
+	db 29
 	db $02
 ;morning
 		db CATERPIE ;20
@@ -1738,7 +1738,7 @@
 
 	map MT_MOON_B1F
 	db $0a ; encounter rates: morn/day/nite
-	db 62
+	db 35
 	db $01
 ;morning
 		db ZUBAT ;20
@@ -1794,7 +1794,7 @@
 
 	map MT_MOON_B2F
 	db $0a; encounter rates: morn/day/nite
-	db 64
+	db 36
 	db $02
 ;morning
 		db GRAVELER ;20
@@ -1850,7 +1850,7 @@
 
 	map MT_MOON_B3F
 	db $0a ; encounter rates: morn/day/nite
-	db 66
+	db 37
 	db $03
 ;morning
 		db GEODUDE ;15
