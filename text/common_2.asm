@@ -5,30 +5,28 @@ _FruitBearingTreeText: ; 0x1bc000
 ; 0x1bc01c
 
 _HeyItsFruitText: ; 0x1bc01c
-	text "Hey! It's"
-	line "@"
-	text_from_ram StringBuffer3
-	text "!"
+	text "There's something"
+	line "growing here!"
 	done
 ; 0x1bc02d
 
 _ObtainedFruitText: ; 0x1bc02d
-	text "Obtained"
+	text "<PLAYER> got the"
 	line "@"
 	text_from_ram StringBuffer3
-	text "!"
+	text "."
 	done
 ; 0x1bc03e
 
 _FruitPackIsFullText: ; 0x1bc03e
 	text "But the PACK is"
-	line "full<...>"
+	line "already full<...>"
 	done
 ; 0x1bc055
 
 _NothingHereText: ; 0x1bc055
-	text "There's nothing"
-	line "here<...>"
+	text "But there's"
+	line "nothing here<...>"
 	done
 ; 0x1bc06b
 
@@ -39,8 +37,8 @@ UnknownText_0x1bc06b: ; 0x1bc06b
 ; 0x1bc089
 
 UnknownText_0x1bc089: ; 0x1bc089
-	text "How many should I"
-	line "make?"
+	text "How many BALLs"
+	line "should I make?"
 	done
 ; 0x1bc0a2
 
@@ -98,14 +96,14 @@ UnknownText_0x1bc123: ; 0x1bc123
 UnknownText_0x1bc13a: ; 0x1bc13a
 	text_from_ram StringBuffer1
 	text ""
-	line "is revitalized."
+	line "is revitalized!"
 	done
 ; 0x1bc14f
 
 UnknownText_0x1bc14f: ; 0x1bc14f
 	text_from_ram StringBuffer1
-	text " grew to"
-	line "level @"
+	text " grew"
+	line "to level @"
 	deciram CurPartyLevel, $13
 	text "!@"
 	sound0
@@ -126,13 +124,13 @@ UnknownText_0x1bc16e: ; 0x1bc16e
 
 UnknownText_0x1bc187: ; 0x1bc187
 	text "Please enter any"
-	line "four-digit number."
+	line "4-digit number."
 	done
 ; 0x1bc1ac
 
 UnknownText_0x1bc1ac: ; 0x1bc1ac
-	text "Enter the same"
-	line "number to confirm."
+	text "Enter that number"
+	line "again to confirm."
 	done
 ; 0x1bc1cf
 
@@ -179,18 +177,19 @@ UnknownText_0x1bc29c: ; 0x1bc29c
 	para "Zzz<...> Hm? Wha<...>?"
 	line "You woke me up!"
 
-	para "Will you check the"
+	para "Can you check the"
 	line "clock for me?"
 	prompt
 ; 0x1bc2eb
 
 UnknownText_0x1bc2eb: ; 0x1bc2eb
-	text "What time is it?"
+	text "What time is it"
+	line "right now?"
 	done
 ; 0x1bc2fd
 
 UnknownText_0x1bc2fd: ; 0x1bc2fd
-	text "What?@"
+	text "What? Did you say@"
 	db "@"
 ; 0x1bc305
 
@@ -200,47 +199,55 @@ UnknownText_0x1bc305: ; 0x1bc305
 ; 0x1bc308
 
 UnknownText_0x1bc308: ; 0x1bc308
-	text "How many minutes?"
+	text "How many minutes"
+	line "past the hour?"
 	done
 ; 0x1bc31b
 
 UnknownText_0x1bc31b: ; 0x1bc31b
-	text "Whoa!@"
+	text "Hmmm<...>@"
 	db "@"
 ; 0x1bc323
 
 UnknownText_0x1bc323: ; 0x1bc323
 	text "?"
+	line "Are you sure?"
 	done
 ; 0x1bc326
 
 UnknownText_0x1bc326: ; 0x1bc326
 	text "!"
-	line "I overslept!"
+
+	para "It's already so"
+	line "bright outside!"
 	done
 ; 0x1bc336
 
 UnknownText_0x1bc336: ; 0x1bc336
 	text "!"
-	line "Yikes! I over-"
-	cont "slept!"
+
+	para "Yikes! I really"
+	line "overslept!"
 	done
 ; 0x1bc34f
 
 UnknownText_0x1bc34f: ; 0x1bc34f
 	text "!"
-	line "No wonder it's so"
-	cont "dark!"
+
+	para "No wonder it's so"
+	line "dark outside!"
 	done
 ; 0x1bc369
 
 UnknownText_0x1bc369: ; 0x1bc369
-	text "What day is it?"
+	text "What day is it"
+	line "today, <PLAYER>?"
 	done
 ; 0x1bc37a
 
 UnknownText_0x1bc37a: ; 0x1bc37a
-	text ", is it?"
+	text "?"
+	line "Is that today?"
 	done
 ; 0x1bc384
 
@@ -310,19 +317,19 @@ UnknownText_0x1bc471: ; 0x1bc471
 ; 0x1bc48c
 
 UnknownText_0x1bc48c: ; 0x1bc48c
-	text "Which side do you"
-	line "want to put it on?"
+	text "Which side will"
+	line "you put it on?"
 	done
 ; 0x1bc4b2
 
 UnknownText_0x1bc4b2: ; 0x1bc4b2
-	text "Which side do you"
-	line "want to put away?"
+	text "Which side will"
+	line "you put away?"
 	done
 ; 0x1bc4d7
 
 UnknownText_0x1bc4d7: ; 0x1bc4d7
-	text "Put away the"
+	text "You put away the"
 	line "@"
 	text_from_ram StringBuffer3
 	text "."
@@ -336,7 +343,7 @@ UnknownText_0x1bc4ec: ; 0x1bc4ec
 ; 0x1bc509
 
 UnknownText_0x1bc509: ; 0x1bc509
-	text "Set up the"
+	text "You set up the"
 	line "@"
 	text_from_ram StringBuffer3
 	text "."
@@ -344,7 +351,7 @@ UnknownText_0x1bc509: ; 0x1bc509
 ; 0x1bc51c
 
 UnknownText_0x1bc51c: ; 0x1bc51c
-	text "Put away the"
+	text "You put away the"
 	line "@"
 	text_from_ram StringBuffer3
 	text $51
@@ -356,31 +363,32 @@ UnknownText_0x1bc51c: ; 0x1bc51c
 ; 0x1bc546
 
 UnknownText_0x1bc546: ; 0x1bc546
-	text "That's already set"
-	line "up."
+	text "That's already"
+	line "been set up."
 	prompt
 ; 0x1bc55d
 
 UnknownText_0x1bc55d: ; 0x1bc55d
-	text "It's the TOWN MAP."
+	text "It's a TOWN MAP"
+	line "of the region."
 	done
 ; 0x1bc570
 
 UnknownText_0x1bc570: ; 0x1bc570
 	text "It's a poster of a"
-	line "cute PIKACHU."
+	line "cute PIKACHU!"
 	done
 ; 0x1bc591
 
 UnknownText_0x1bc591: ; 0x1bc591
 	text "It's a poster of a"
-	line "cute CLEFAIRY."
+	line "cute CLEFAIRY!"
 	done
 ; 0x1bc5b3
 
 UnknownText_0x1bc5b3: ; 0x1bc5b3
 	text "It's a poster of a"
-	line "cute JIGGLYPUFF."
+	line "cute JIGGLYPUFF!"
 	done
 ; 0x1bc5d7
 
@@ -388,7 +396,7 @@ UnknownText_0x1bc5d7: ; 0x1bc5d7
 	text "It's an adorable"
 	line "@"
 	text_from_ram StringBuffer3
-	text "."
+	text "!"
 	done
 ; 0x1bc5ef
 
@@ -400,38 +408,50 @@ UnknownText_0x1bc5ef: ; 0x1bc5ef
 
 UnknownText_0x1bc615: ; 0x1bc615
 	text "Hi, ", $52, "!"
-	line "How are you?"
+	line "Are you doing OK?"
 	prompt
 ; 0x1bc62a
 
 UnknownText_0x1bc62a: ; 0x1bc62a
 	text "I found a useful"
-	line "item shopping, so"
+	line "item shopping."
 	prompt
 ; 0x1bc64e
 
 UnknownText_0x1bc64e: ; 0x1bc64e
-	text "I bought it with"
-	line "your money. Sorry!"
+	text "I used your money"
+	line "to buy it. Sorry!"
 	prompt
 ; 0x1bc673
 
 UnknownText_0x1bc673: ; 0x1bc673
 	text "It's in your PC."
 	line "You'll like it!"
+
+	para "Anyway, I'm glad"
+	line "you're doing well."
+
+	para "Don't forget to"
+	line "SAVE your game!"
 	done
 ; 0x1bc693
 
 UnknownText_0x1bc693: ; 0x1bc693
 	text "While shopping"
 	line "today, I saw this"
-	cont "adorable doll, so"
+	cont "adorable doll."
 	prompt
 ; 0x1bc6c7
 
 UnknownText_0x1bc6c7: ; 0x1bc6c7
 	text "It's in your room."
 	line "You'll love it!"
+
+	para "Anyway, I'm glad"
+	line "you're doing well."
+
+	para "Don't forget to"
+	line "SAVE your game!"
 	done
 ; 0x1bc6e9
 
@@ -576,7 +596,7 @@ UnknownText_0x1bc80a: ; 0x1bc80a
 
 UnknownText_0x1bc81a: ; 0x1bc81a
 	text ""
-	line "MARY: PROF.OAK'S"
+	line "MARY: PROF.OAK's"
 	done
 ; 0x1bc82d
 
@@ -605,7 +625,7 @@ UnknownText_0x1bc857: ; 0x1bc857
 
 UnknownText_0x1bc858: ; 0x1bc858
 	text ""
-	line "may be seen around"
+	line "may be seen near"
 	done
 ; 0x1bc86d
 
@@ -627,13 +647,13 @@ UnknownText_0x1bc876: ; 0x1bc876
 
 UnknownText_0x1bc885: ; 0x1bc885
 	text ""
-	line "sweet and adorably"
+	line "sweet & adorably"
 	done
 ; 0x1bc89a
 
 UnknownText_0x1bc89a: ; 0x1bc89a
 	text ""
-	line "wiggly and slickly"
+	line "wiggly & slickly"
 	done
 ; 0x1bc8af
 
@@ -645,7 +665,7 @@ UnknownText_0x1bc8af: ; 0x1bc8af
 
 UnknownText_0x1bc8c1: ; 0x1bc8c1
 	text ""
-	line "undeniably kind of"
+	line "undeniably kinda"
 	done
 ; 0x1bc8d6
 
@@ -663,7 +683,7 @@ UnknownText_0x1bc8ea: ; 0x1bc8ea
 
 UnknownText_0x1bc8fe: ; 0x1bc8fe
 	text ""
-	line "almost poisonously"
+	line "almost toxically"
 	done
 ; 0x1bc913
 
@@ -711,7 +731,7 @@ UnknownText_0x1bc989: ; 0x1bc989
 
 UnknownText_0x1bc999: ; 0x1bc999
 	text ""
-	line "so flipped out and"
+	line "so flipped out &"
 	done
 ; 0x1bc9ae
 
@@ -723,13 +743,13 @@ UnknownText_0x1bc9ae: ; 0x1bc9ae
 
 UnknownText_0x1bc9c0: ; 0x1bc9c0
 	text ""
-	line "cute."
+	line "cute!"
 	done
 ; 0x1bc9c8
 
 UnknownText_0x1bc9c8: ; 0x1bc9c8
 	text ""
-	line "weird."
+	line "weird<...>"
 	done
 ; 0x1bc9d1
 
@@ -747,7 +767,7 @@ UnknownText_0x1bc9dd: ; 0x1bc9dd
 
 UnknownText_0x1bc9ee: ; 0x1bc9ee
 	text ""
-	line "frightening."
+	line "frightening!"
 	done
 ; 0x1bc9fd
 
@@ -759,13 +779,13 @@ UnknownText_0x1bc9fd: ; 0x1bc9fd
 
 UnknownText_0x1bca11: ; 0x1bca11
 	text ""
-	line "powerful."
+	line "powerful!"
 	done
 ; 0x1bca1d
 
 UnknownText_0x1bca1d: ; 0x1bca1d
 	text ""
-	line "exciting."
+	line "exciting!"
 	done
 ; 0x1bca29
 
@@ -777,13 +797,13 @@ UnknownText_0x1bca29: ; 0x1bca29
 
 UnknownText_0x1bca33: ; 0x1bca33
 	text ""
-	line "inspiring."
+	line "inspiring!"
 	done
 ; 0x1bca40
 
 UnknownText_0x1bca40: ; 0x1bca40
 	text ""
-	line "friendly."
+	line "friendly!"
 	done
 ; 0x1bca4c
 
@@ -807,13 +827,13 @@ UnknownText_0x1bca6c: ; 0x1bca6c
 
 UnknownText_0x1bca77: ; 0x1bca77
 	text ""
-	line "lovely."
+	line "lovely!"
 	done
 ; 0x1bca81
 
 UnknownText_0x1bca81: ; 0x1bca81
 	text ""
-	line "speedy."
+	line "speedy!"
 	done
 ; 0x1bca8b
 
@@ -885,13 +905,13 @@ UnknownText_0x1bcb09: ; 0x1bcb09
 
 UnknownText_0x1bcb1b: ; 0x1bcb1b
 	text ""
-	line "#MON March!"
+	line "#MON MARCH!"
 	done
 ; 0x1bcb29
 
 UnknownText_0x1bcb29: ; 0x1bcb29
 	text ""
-	line "#MON Lullaby!"
+	line "#MON LULLABY!"
 	done
 ; 0x1bcb39
 
@@ -927,19 +947,19 @@ UnknownText_0x1bcb86: ; 0x1bcb86
 
 UnknownText_0x1bcb9a: ; 0x1bcb9a
 	text ""
-	line "LUCKY NUMBER SHOW!"
+	line "LUCKY NUMBER!"
 	done
 ; 0x1bcbaf
 
 UnknownText_0x1bcbaf: ; 0x1bcbaf
 	text ""
-	line "This week's Lucky"
+	line "This week's LUCKY"
 	done
 ; 0x1bcbc2
 
 UnknownText_0x1bcbc2: ; 0x1bcbc2
 	text ""
-	line "Number is @"
+	line "NUMBER is @"
 	interpret_data
 	text_from_ram StringBuffer1
 	text "!"
@@ -954,7 +974,7 @@ UnknownText_0x1bcbd6: ; 0x1bcbd6
 
 UnknownText_0x1bcbe9: ; 0x1bcbe9
 	text ""
-	line "Match it and go to"
+	line "Match it & go to"
 	done
 ; 0x1bcbfe
 
@@ -972,13 +992,13 @@ UnknownText_0x1bcc11: ; 0x1bcc11
 
 UnknownText_0x1bcc25: ; 0x1bcc25
 	text ""
-	line "gets to be a drag<...>"
+	line "can be a drag<...>"
 	done
 ; 0x1bcc3a
 
 UnknownText_0x1bcc3a: ; 0x1bcc3a
 	text ""
-	line "PLACES AND PEOPLE!"
+	line "PLACES & PEOPLE!"
 	done
 ; 0x1bcc4f
 
@@ -1027,7 +1047,7 @@ UnknownText_0x1bcc9e: ; 0x1bcc9e
 
 UnknownText_0x1bccb1: ; 0x1bccb1
 	text ""
-	line "is quite noisy."
+	line "is quite noisy!"
 	done
 ; 0x1bccc3
 
@@ -1063,13 +1083,13 @@ UnknownText_0x1bcd09: ; 0x1bcd09
 
 UnknownText_0x1bcd1a: ; 0x1bcd1a
 	text ""
-	line "is actually great."
+	line "is actually great!"
 	done
 ; 0x1bcd2f
 
 UnknownText_0x1bcd2f: ; 0x1bcd2f
 	text ""
-	line "is just my type."
+	line "is just my type!"
 	done
 ; 0x1bcd42
 
@@ -1087,7 +1107,7 @@ UnknownText_0x1bcd54: ; 0x1bcd54
 
 UnknownText_0x1bcd64: ; 0x1bcd64
 	text ""
-	line "is kind of weird."
+	line "is kind of weird<...>"
 	done
 ; 0x1bcd78
 
@@ -1170,7 +1190,7 @@ UnknownText_0x1bce44: ; 0x1bce44
 	text ""
 	line "@"
 	interpret_data
-	text "Where is our boss?"
+	text "Where's our BOSS?"
 	done
 ; 0x1bce5c
 
@@ -1240,7 +1260,7 @@ UnknownText_0x1bcefb: ; 0x1bcefb
 
 UnknownText_0x1bcf0d: ; 0x1bcf0d
 	text ""
-	line "have to shut down!"
+	line "have to sign off!"
 	done
 ; 0x1bcf22
 
@@ -1264,7 +1284,7 @@ UnknownText_0x1bcf4b: ; 0x1bcf4b
 
 UnknownText_0x1bcf5e: ; 0x1bcf5e
 	text ""
-	line "late! Presented to"
+	line "late! Brought to"
 	done
 ; 0x1bcf73
 
@@ -1297,7 +1317,7 @@ _WhosThatPkmnText1:
 
 _WhosThatPkmnText2:
 	text ""
-	line "#MON Quiz!"
+	line "#MON QUIZ!"
 	done
 
 _WhosThatPkmnText3:
@@ -1312,12 +1332,12 @@ _WhosThatPkmnText4:
 
 _WhosThatPkmnText5:
 	text ""
-	line "what #MON this"
+	line "what species of"
 	done
 
 _WhosThatPkmnText6:
 	text ""
-	line "is?"
+	line "#MON this is?"
 	done
 
 _WhosThatPkmnText7:
@@ -1327,7 +1347,7 @@ _WhosThatPkmnText7:
 
 _WhosThatPkmnText8:
 	text ""
-	line "Did you guess it?"
+	line "Who's that #MON?"
 	done
 
 _WhosThatPkmnText9:
@@ -1370,22 +1390,22 @@ UnknownText_0x1bcfe5: ; 0x1bcfe5
 ; 0x1bd009
 
 UnknownText_0x1bd009: ; 0x1bd009
-	text "The @"
+	text "<PLAYER> put the"
+	line "@"
 	text_from_ram StringBuffer1
 	text ""
-	line "was put in the"
-	cont "PACK."
+	cont "in the PACK."
 	done
 ; 0x1bd029
 
 UnknownText_0x1bd029: ; 0x1bd029
-	text "Remaining Time"
+	text "REMAINING TIME"
 	done
 ; 0x1bd039
 
 UnknownText_0x1bd039: ; 0x1bd039
 	text "Your #MON's HP"
-	line "was healed."
+	line "was restored."
 	prompt
 ; 0x1bd054
 
@@ -1396,7 +1416,7 @@ UnknownText_0x1bd054: ; 0x1bd054
 
 UnknownText_0x1bd05e: ; 0x1bd05e
 	text "Which number"
-	line "should be changed?"
+	line "should change?"
 	done
 ; 0x1bd07f
 
@@ -1409,8 +1429,8 @@ UnknownText_0x1bd07f: ; 0x1bd07f
 ; 0x1bd09a
 
 UnknownText_0x1bd09a: ; 0x1bd09a
-	text "You need two #-"
-	line "MON for breeding."
+	text "You need two <PK><MN>"
+	line "for breeding."
 	prompt
 ; 0x1bd0bd
 
@@ -1425,7 +1445,8 @@ UnknownText_0x1bd0d8: ; 0x1bd0d8
 	line "is @"
 	deciram wd265, $13
 	text "."
-	cont "Should they breed?"
+
+	para "Try to breed?"
 	done
 ; 0x1bd109
 
@@ -1480,7 +1501,7 @@ UnknownText_0x1bd188: ; 0x1bd188
 ; 0x1bd19a
 
 UnknownText_0x1bd19a: ; 0x1bd19a
-	text "A new CARD arrived"
+	text "New CARD arrived"
 	line "from @"
 	text_from_ram StringBuffer2
 	text "."
@@ -1546,8 +1567,8 @@ UnknownText_0x1bd286: ; 0x1bd286
 ; 0x1bd2a0
 
 UnknownText_0x1bd2a0: ; 0x1bd2a0
-	text "Obtained the"
-	line "VOLTORBBADGE!"
+	text "<PLAYER> got the"
+	line "VOLTORB BADGE!"
 	done
 ; 0x1bd2bc
 
@@ -1557,15 +1578,14 @@ UnknownText_0x1bd2bc: ; 0x1bd2bc
 ; 0x1bd2ca
 
 UnknownText_0x1bd2ca: ; 0x1bd2ca
-	text "ANNOUNCER: BEEEP!"
-
-	para "Time's up!"
+	text "BEEEP!"
+	line "Time's up!"
 	done
 ; 0x1bd2e7
 
 UnknownText_0x1bd2e7: ; 0x1bd2e7
-	text "ANNOUNCER: The"
-	line "Contest is over!"
+	text "The BUG-CATCHING"
+	line "CONTEST is over!"
 	done
 ; 0x1bd308
 
@@ -1583,7 +1603,7 @@ _UseAnotherRepelText:
 	done
 
 UnknownText_0x1bd321: ; 0x1bd321
-	text $52, " found"
+	text $52, " got the"
 	line "@"
 	text_from_ram StringBuffer3
 	text "!"
@@ -1612,8 +1632,8 @@ UnknownText_0x1bd34b: ; 0x1bd34b
 ; 0x1bd39e
 
 UnknownText_0x1bd39e: ; 0x1bd39e
-	text "SAVING RECORD<...>"
-	line "DON'T TURN OFF!"
+	text "You're filled with<...>"
+	line "DETERMINATION!"
 	done
 ; 0x1bd3be
 
@@ -1633,7 +1653,8 @@ UnknownText_0x1bd3d6: ; 0x1bd3d6
 ; 0x1bd3d7
 
 UnknownText_0x1bd3d7: ; 0x1bd3d7
-	text "You have no coins."
+	text "You don't have any"
+	line "coins."
 	prompt
 ; 0x1bd3eb
 
@@ -1645,7 +1666,7 @@ UnknownText_0x1bd3eb: ; 0x1bd3eb
 
 UnknownText_0x1bd407: ; 0x1bd407
 	text "OK, connect the"
-	line "Game Link Cable."
+	line "GAME LINK CABLE."
 	prompt
 ; 0x1bd429
 
@@ -1671,9 +1692,11 @@ UnknownText_0x1bd448: ; 0x1bd448
 ; 0x1bd449
 
 UnknownText_0x1bd449: ; 0x1bd449
-	text "I collect #MON."
-	line "Do you have"
-	cont "@"
+	text "Hello! I collect"
+	line "#MON."
+
+	para "Do you have"
+	line "@"
 	text_from_ram StringBuffer1
 	text "?"
 
@@ -1700,8 +1723,8 @@ UnknownText_0x1bd4aa: ; 0x1bd4aa
 ; 0x1bd4d2
 
 UnknownText_0x1bd4d2: ; 0x1bd4d2
-	text "Yay! I got myself"
-	line "@"
+	text "Yay! I've got my"
+	line "own @"
 	text_from_ram StringBuffer1
 	text "!"
 	cont "Thanks!"
@@ -1718,15 +1741,14 @@ UnknownText_0x1bd4f4: ; 0x1bd4f4
 
 UnknownText_0x1bd512: ; 0x1bd512
 	text "Hi, I'm looking"
-	line "for this #MON."
+	line "for a #MON."
 
 	para "If you have"
 	line "@"
 	text_from_ram StringBuffer1
 	text ", would"
-
-	para "you trade it for"
-	line "my @"
+	cont "you trade it for"
+	cont "my @"
 	text_from_ram StringBuffer2
 	text "?"
 	done
@@ -1745,18 +1767,18 @@ UnknownText_0x1bd5a1: ; 0x1bd5a1
 	text "You don't have"
 	line "@"
 	text_from_ram StringBuffer1
-	text "? That's"
-	cont "too bad, then."
+	text "?"
+	cont "That's too bad<...>"
 	done
 ; 0x1bd5cc
 
 UnknownText_0x1bd5cc: ; 0x1bd5cc
 	text "Great! Thank you!"
 
-	para "I finally got"
-	line "@"
+	para "I finally have my"
+	line "own @"
 	text_from_ram StringBuffer1
-	text "."
+	text "!"
 	done
 ; 0x1bd5f4
 
@@ -1772,9 +1794,10 @@ UnknownText_0x1bd5f4: ; 0x1bd5f4
 UnknownText_0x1bd621: ; 0x1bd621
 	text_from_ram wd050
 	text "'s cute,"
-	line "but I don't have"
+	line "but I can't seem"
+	cont "to catch one."
 
-	para "it. Do you have"
+	para "Do you have"
 	line "@"
 	text_from_ram StringBuffer1
 	text "?"
@@ -1788,36 +1811,36 @@ UnknownText_0x1bd621: ; 0x1bd621
 
 UnknownText_0x1bd673: ; 0x1bd673
 	text "You don't want to"
-	line "trade? Oh, darn<...>"
+	line "trade? Darn<...>"
 	done
 ; 0x1bd696
 
 UnknownText_0x1bd696: ; 0x1bd696
-	text "That's not"
+	text "<...>That's not"
 	line "@"
 	text_from_ram StringBuffer1
 	text "."
 
-	para "Please trade with"
-	line "me if you get one."
+	para "Please come back"
+	line "if you get one."
 	done
 ; 0x1bd6cd
 
 UnknownText_0x1bd6cd: ; 0x1bd6cd
 	text "Wow! Thank you!"
-	line "I always wanted"
-	cont "@"
+
+	para "I always wanted"
+	line "@"
 	text_from_ram wd050
 	text "!"
 	done
 ; 0x1bd6f5
 
 UnknownText_0x1bd6f5: ; 0x1bd6f5
-	text "How is that"
+	text "How is my old"
 	line "@"
 	text_from_ram StringBuffer2
-	text " I"
-	cont "traded you doing?"
+	text " doing?"
 
 	para "Your @"
 	text_from_ram wd050
@@ -1827,35 +1850,50 @@ UnknownText_0x1bd6f5: ; 0x1bd6f5
 ; 0x1bd731
 
 UnknownText_0x1bd731: ; 0x1bd731
-	text "Uh? What happened?"
+	text "Huh?"
+	line "What happened?"
 	done
 ; 0x1bd745
 
 UnknownText_0x1bd745: ; 0x1bd745
-	text "Trading is so odd<...>"
+	text "Trading is so"
+	line "strange<...>"
 
-	para "I still have a lot"
-	line "to learn about it."
+	para "I still have a"
+	line "a lot to learn"
+	cont "about it."
 	done
 ; 0x1bd77f
 
 UnknownText_0x1bd77f: ; 0x1bd77f
-	text "<...>"
+	text "<...>PROF.OAK called."
+
+	para "He said he asked"
+	line "you to continue"
+	cont "helping him with"
+	cont "that #DEX."
+
+	para $56, $56, $56
 
 	para "So, you're leaving"
-	line "on an adventure<...>"
+	line "home again<...>"
 
-	para "OK!"
-	line "I'll help too."
+	para "It's not that I"
+	line "don't trust you."
 
-	para "But what can I do"
-	line "for you?"
+	para "I just hope you'll"
+	line "be careful, and"
+	cont "call home often."
 
-	para "I know! I'll save"
-	line "money for you."
+	para "Is there anything"
+	line "I can do to help?"
 
-	para "On a long journey,"
-	line "money's important."
+	para "Oh, how about you"
+	line "send home some of"
+	cont "your prize money?"
+
+	para "I can keep it for"
+	line "you, so it's safe."
 
 	para "Do you want me to"
 	line "save your money?"
@@ -1865,7 +1903,6 @@ UnknownText_0x1bd77f: ; 0x1bd77f
 UnknownText_0x1bd868: ; 0x1bd868
 	text "OK, I'll take care"
 	line "of your money."
-	para $56, $56, $56
 	prompt
 ; 0x1bd88e
 
@@ -1881,21 +1918,23 @@ UnknownText_0x1bd88e: ; 0x1bd88e
 ; 0x1bd8da
 
 UnknownText_0x1bd8da: ; 0x1bd8da
-	text "Hi! Welcome home!"
-	line "You're trying very"
-	cont "hard, I see."
+	text "<PLAYER>!"
+	line "Welcome home!"
+
+	para "I'm so glad to"
+	line "see you, <PLAYER>."
 
 	para "I've kept your"
-	line "room tidy."
+	line "room tidy!"
 
-	para "Or is this about"
+	para "Or, is this about"
 	line "your money?"
 	done
 ; 0x1bd942
 
 UnknownText_0x1bd942: ; 0x1bd942
-	text "What do you want"
-	line "to do?"
+	text "Of course! What"
+	line "can I do to help?"
 	done
 ; 0x1bd95b
 
@@ -1943,16 +1982,16 @@ UnknownText_0x1bda0b: ; 0x1bda0b
 
 UnknownText_0x1bda25: ; 0x1bda25
 	text "OK, I'll save your"
-	line "money. Trust me!"
+	line "money. I promise."
 
-	para $52, ", stick"
-	line "with it!"
+	para $52, ", stay"
+	line "safe out there<...>"
 	done
 ; 0x1bda5b
 
 UnknownText_0x1bda5b: ; 0x1bda5b
 	text "Your money's safe"
-	line "here! Get going!"
+	line "with me, <PLAYER>!"
 	done
 ; 0x1bda7e
 
@@ -1963,8 +2002,8 @@ UnknownText_0x1bda7e: ; 0x1bda7e
 ; 0x1bda90
 
 UnknownText_0x1bda90: ; 0x1bda90
-	text "Just do what"
-	line "you can."
+	text "Just do your"
+	line "best, <PLAYER>."
 	done
 ; 0x1bdaa7
 
@@ -1974,23 +2013,27 @@ UnknownText_0x1bdaa7: ; 0x1bdaa7
 ; 0x1bdaa9
 
 UnknownText_0x1bdaa9: ; 0x1bdaa9
-	text "I'm the DAY-CARE"
-	line "MAN. Want me to"
-	cont "raise a #MON?"
+	text "Howdy! I'm the"
+	line "DAY-CARE MAN!"
+
+	para "Want me to raise"
+	line "a #MON?"
 	done
 ; 0x1bdad8
 
 UnknownText_0x1bdad8: ; 0x1bdad8
-	text "I'm the DAY-CARE"
-	line "MAN. Do you know"
-	cont "about EGGS?"
+	text "Howdy! I'm the"
+	line "DAY-CARE MAN!"
+
+	para "Do you know about"
+	line "#MON EGGs?"
 
 	para "I was raising"
 	line "#MON with my"
 	cont "wife, you see."
 
-	para "We were shocked to"
-	line "find an EGG!"
+	para "We were shocked"
+	line "to find an EGG!"
 
 	para "How incredible is"
 	line "that?"
@@ -2001,8 +2044,8 @@ UnknownText_0x1bdad8: ; 0x1bdad8
 ; 0x1bdb85
 
 UnknownText_0x1bdb85: ; 0x1bdb85
-	text "I'm the DAY-CARE"
-	line "LADY."
+	text "Greetings. I'm the"
+	line "DAY-CARE LADY."
 
 	para "Should I raise a"
 	line "#MON for you?"
@@ -2010,16 +2053,18 @@ UnknownText_0x1bdb85: ; 0x1bdb85
 ; 0x1bdbbb
 
 UnknownText_0x1bdbbb: ; 0x1bdbbb
-	text "I'm the DAY-CARE"
-	line "LADY. Do you know"
-	cont "about EGGS?"
+	text "Greetings. I'm the"
+	line "DAY-CARE LADY."
+
+	para "Do you know about"
+	line "#MON EGGs?"
 
 	para "My husband and I"
 	line "were raising some"
 	cont "#MON, you see."
 
-	para "We were shocked to"
-	line "find an EGG!"
+	para "We were shocked"
+	line "to find an EGG!"
 
 	para "How incredible"
 	line "could that be?"
@@ -2036,8 +2081,8 @@ UnknownText_0x1bdc79: ; 0x1bdc79
 ; 0x1bdc97
 
 UnknownText_0x1bdc97: ; 0x1bdc97
-	text "Oh? But you have"
-	line "just one #MON."
+	text "Oh? But you only"
+	line "have one #MON."
 	prompt
 ; 0x1bdcb8
 
@@ -2048,8 +2093,8 @@ UnknownText_0x1bdcb8: ; 0x1bdcb8
 ; 0x1bdcda
 
 UnknownText_0x1bdcda: ; 0x1bdcda
-	text "Remove MAIL before"
-	line "you come see me."
+	text "I wouldn't want to"
+	line "lose your MAIL."
 	prompt
 ; 0x1bdcff
 
@@ -2070,14 +2115,13 @@ UnknownText_0x1bdd30: ; 0x1bdd30
 
 UnknownText_0x1bdd4b: ; 0x1bdd4b
 	text "Come back for it"
-	line "later."
+	line "later, OK?"
 	done
 ; 0x1bdd64
 
 UnknownText_0x1bdd64: ; 0x1bdd64
-	text "Are we geniuses or"
-	line "what? Want to see"
-	cont "your @"
+	text "Want to see your"
+	line "@"
 	text_from_ram StringBuffer1
 	text "?"
 	done
@@ -2117,22 +2161,22 @@ UnknownText_0x1bde1f: ; 0x1bde1f
 ; 0x1bde32
 
 UnknownText_0x1bde32: ; 0x1bde32
-	text "Huh? Back already?"
-	line "Your @"
+	text "Oh? Back already?"
+
+	para "Your @"
 	text_from_ram StringBuffer1
-	text $51
-	db "needs a little"
-	line "more time with us."
+	line "needs a little"
+	cont "more time here."
 
 	para "If you want your"
 	line "#MON back, it"
-	cont "will cost ¥100."
+	cont "will cost Â¥100."
 	done
 ; 0x1bdea2
 
 UnknownText_0x1bdea2: ; 0x1bdea2
 	text "You have no room"
-	line "for it."
+	line "in your party."
 	prompt
 ; 0x1bdebc
 
@@ -2143,7 +2187,7 @@ UnknownText_0x1bdebc: ; 0x1bdebc
 ; 0x1bded9
 
 UnknownText_0x1bded9: ; 0x1bded9
-	text "Oh, fine then."
+	text "Oh, OK then."
 	prompt
 ; 0x1bdee9
 
@@ -2161,31 +2205,34 @@ UnknownText_0x1bdf00: ; 0x1bdf00
 	text "Ah, it's you!"
 
 	para "We were raising"
-	line "your #MON, and"
+	line "your #MON, and<...>"
 
-	para "my goodness, were"
+	para "My goodness, were"
 	line "we surprised!"
 
-	para "Your #MON had"
+	para "Your #MON made"
 	line "an EGG!"
 
 	para "We don't know how"
-	line "it got there, but"
+	line "it got there<...>"
 
-	para "your #MON had"
-	line "it. You want it?"
+	para "But your #MON"
+	line "surely made it!"
+
+	para "Would you like to"
+	line "keep the EGG?"
 	done
 ; 0x1bdfa5
 
 UnknownText_0x1bdfa5: ; 0x1bdfa5
 	text $52, " received"
-	line "the EGG!"
+	line "an EGG."
 	done
 ; 0x1bdfba
 
 UnknownText_0x1bdfba: ; 0x1bdfba
-	text "Take good care of"
-	line "it."
+	text "Raise the #MON"
+	line "inside with care!"
 	done
 ; 0x1bdfd1
 
@@ -2204,8 +2251,8 @@ UnknownText_0x1bdff2: ; 0x1bdff2
 
 UnknownText_0x1be024: ; 0x1be024
 	text "Which #MON"
-	line "should I photo-"
-	cont "graph?"
+	line "should I"
+	cont "photograph?"
 	prompt
 ; 0x1be047
 
