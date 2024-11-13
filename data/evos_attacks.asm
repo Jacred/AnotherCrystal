@@ -14,8 +14,8 @@ BulbasaurEvosAttacks:
 	db 0 ; no more evolutions
 	db 1,TACKLE
 	db 3,GROWL
-	db 6,LEECH_SEED
-	db 9,VINE_WHIP
+	db 6,VINE_WHIP
+	db 9,LEECH_SEED
 	db 12,POISONPOWDER
 	db 15,MUD_SLAP ; tm move
 	db 18,RAZOR_LEAF
@@ -34,8 +34,8 @@ IvysaurEvosAttacks:
 	db EVOLVE_LEVEL,32,VENUSAUR
 	db 0 ; no more evolutions
 	db 1,GROWL
-	db 1,LEECH_SEED
 	db 1,VINE_WHIP
+	db 1,LEECH_SEED
 	db 1,POISONPOWDER
 	db 20,RAZOR_LEAF
 	db 23,HEADBUTT ; tm move
@@ -202,15 +202,15 @@ CaterpieEvosAttacks:
 	db EVOLVE_LEVEL, 7, METAPOD
 	db 0 ; no more evolutions
 	db 1,TACKLE
-	db 3,STRING_SHOT
+	db 1,STRING_SHOT
 	db 0 ; no more level-up moves
 
 MetapodEvosAttacks:
 	db EVOLVE_LEVEL, 10, BUTTERFREE
 	db 0 ; no more evolutions
 	db 1,TACKLE
+	db 1,STRING_SHOT
 	db 1,HARDEN
-	db 4,STRING_SHOT
 	db 7,HARDEN
 	db 15, IRON_DEFENSE
 	db 0 ; no more level-up moves
@@ -245,7 +245,7 @@ WeedleEvosAttacks:
 	db EVOLVE_LEVEL, 7, KAKUNA
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 3, STRING_SHOT
+	db 1, STRING_SHOT
 	db 100, HORN_DRILL
 	db 0 ; no more level-up moves
 
@@ -253,8 +253,8 @@ KakunaEvosAttacks:
 	db EVOLVE_LEVEL, 10, BEEDRILL
 	db 0 ; no more evolutions
 	db 1, POISON_STING
+	db 1, STRING_SHOT
 	db 1, HARDEN
-	db 4, STRING_SHOT
 	db 7, HARDEN
 	db 15, IRON_DEFENSE
 	db 0 ; no more level-up moves
@@ -4806,15 +4806,25 @@ StantlerEvosAttacks:
 SmeargleEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SKETCH
+	db 6, SKETCH
 	db 11, SKETCH
+	db 16, SKETCH
 	db 21, SKETCH
+	db 26, SKETCH
 	db 31, SKETCH
+	db 36, SKETCH
 	db 41, SKETCH
+	db 46, SKETCH
 	db 51, SKETCH
+	db 56, SKETCH
 	db 61, SKETCH
+	db 66, SKETCH
 	db 71, SKETCH
+	db 76, SKETCH
 	db 81, SKETCH
+	db 86, SKETCH
 	db 91, SKETCH
+	db 96, SKETCH
 	db 0 ; no more level-up moves
 
 TyrogueEvosAttacks:
