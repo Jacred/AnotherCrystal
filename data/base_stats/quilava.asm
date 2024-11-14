@@ -1,16 +1,16 @@
 	db QUILAVA ; 156
 
-	db  58,  64,  58,  80,  80,  65
+	db  53,  69,  63,  75, 100,  70
 	;   hp  atk  def  spd  sat  sdf
-
+	;   -5   +5   +5   -5  +20   +5
 	db FIRE, FIRE
-	db 45 ; catch rate
+	db 27 ; catch rate
 	db 142 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db GOLD_BERRY ; item 1
+	db CHARCOAL ; item 2
 	db 31 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
