@@ -1,16 +1,16 @@
 	db PUPITAR ; 247
 
-	db  70,  84,  70,  51,  65,  70
+	db  70,  84, 120,  51,  65, 120
 	;   hp  atk  def  spd  sat  sdf
-
+	;            +50            +50
 	db ROCK, GROUND
-	db 45 ; catch rate
+	db 27 ; catch rate
 	db 144 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db GOLD_BERRY ; item 1
+	db HARD_STONE ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 40 ; step cycles to hatch
+	db 8 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
