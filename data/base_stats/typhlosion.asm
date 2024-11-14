@@ -1,16 +1,16 @@
 	db TYPHLOSION ; 157
 
-	db  78,  84,  78, 100, 109,  85
+	db  73,  94,  88,  95, 130,  95
 	;   hp  atk  def  spd  sat  sdf
-
+	;   -5  +10  +10   -5  +21  +10
 	db FIRE, FIRE
-	db 45 ; catch rate
+	db 9 ; catch rate
 	db 240 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db FIRE_STONE ; item 1
+	db FIRE_STONE ; item 2
 	db 31 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
