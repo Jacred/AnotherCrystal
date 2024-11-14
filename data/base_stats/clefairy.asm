@@ -1,17 +1,16 @@
 	db CLEFAIRY ; 035
 
-	db 70, 45, 48, 35, 60, 65
-
+	db  75,  50,  53,  40,  70,  80
 	;   hp  atk  def  spd  sat  sdf
-
-	db FAIRY_T, FAIRY_T
+	;   +5   +5   +5   +5  +10  +20
+	db NORMAL, FAIRY_T
 	db 150 ; catch rate
 	db 113 ; base exp
 	db MYSTERYBERRY ; item 1
 	db MOON_STONE ; item 2
 	db 191 ; gender
 	db 100 ; unknown
-	db 10 ; step cycles to hatch
+	db 2 ; step cycles to hatch
 	db 5 ; unknown
 	dn 5, 5 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
