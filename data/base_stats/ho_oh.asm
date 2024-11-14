@@ -10,7 +10,7 @@
 	db BRIGHTPOWDER ; item 2
 	db 255 ; gender
 	db 100 ; unknown
-	db 120 ; step cycles to hatch
+	db 24 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
