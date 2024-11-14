@@ -1,8 +1,8 @@
 	db SNORLAX ; 143
 
-	db 160, 110, 65, 30, 65, 110
+	db 160, 110,  80,  30,  80, 110
 	;   hp  atk  def  spd  sat  sdf
-
+	;            +15       +15
 	db NORMAL, NORMAL
 	db 25 ; catch rate
 	db 189 ; base exp
