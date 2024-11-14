@@ -1,16 +1,16 @@
 	db DRAGONAIR ; 148
 
-	db 61, 84, 65, 70, 70, 70
+	db  61, 104,  85,  90,  90,  90
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +20  +20  +20  +20  +20
 	db DRAGON, DRAGON
-	db 45 ; catch rate
+	db 27 ; catch rate
 	db 147 ; base exp
-	db NO_ITEM ; item 1
+	db DRAGON_SCALE ; item 1
 	db DRAGON_SCALE ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 40 ; step cycles to hatch
+	db 8 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
