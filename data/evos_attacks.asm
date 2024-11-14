@@ -5019,7 +5019,7 @@ EnteiEvosAttacks:
 	db 86, WILLOWISP
 	db 91, IRON_HEAD
 	db 96, DOUBLE_EDGE
-	db 100,SACRED_FIRE
+	db 100,FLARE_BLITZ
 	db 0 ; no more level-up moves
 
 SuicuneEvosAttacks:
