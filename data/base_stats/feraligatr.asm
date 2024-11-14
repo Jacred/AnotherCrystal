@@ -1,16 +1,16 @@
 	db FERALIGATR ; 160
 
-	db  85, 105, 100,  78,  79,  83
+	db  85, 105, 110,  78,  99,  93
 	;   hp  atk  def  spd  sat  sdf
-
+	;        +5  +10       +20  +10
 	db WATER, WATER
-	db 45 ; catch rate
+	db 9 ; catch rate
 	db 239 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db WATER_STONE ; item 1
+	db WATER_STONE ; item 2
 	db 31 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
