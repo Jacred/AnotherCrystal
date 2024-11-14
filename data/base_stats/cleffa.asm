@@ -2,15 +2,15 @@
 
 	db  50,  25,  28,  15,  45,  55
 	;   hp  atk  def  spd  sat  sdf
-
-	db FAIRY_T, FAIRY_T
-	db 150 ; catch rate
+	
+	db NORMAL, FAIRY_T
+	db 255 ; catch rate
 	db 44 ; base exp
 	db MYSTERYBERRY ; item 1
 	db MOON_STONE ; item 2
 	db 191 ; gender
 	db 100 ; unknown
-	db 10 ; step cycles to hatch
+	db 2 ; step cycles to hatch
 	db 5 ; unknown
 	dn 5, 5 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
