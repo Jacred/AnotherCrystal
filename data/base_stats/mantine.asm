@@ -1,16 +1,16 @@
 	db MANTINE ; 226
 
-	db  65,  40,  70,  70,  80, 140
+	db  85,  40,  90,  70,  80, 140
 	;   hp  atk  def  spd  sat  sdf
-
+	;  +20       +20
 	db WATER, FLYING
 	db 25 ; catch rate
 	db 163 ; base exp
 	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db LEFTOVERS ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
