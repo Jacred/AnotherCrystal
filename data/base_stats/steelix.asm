@@ -1,16 +1,16 @@
 	db STEELIX ; 208
 
-	db  75,  85, 200,  30,  55,  65
+	db  75, 105, 215,  30,  55,  80
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +20  +15            +15
 	db STEEL, GROUND
 	db 25 ; catch rate
 	db 179 ; base exp
-	db NO_ITEM ; item 1
-	db METAL_COAT ; item 2
+	db METAL_COAT ; item 1
+	db LEFTOVERS ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
