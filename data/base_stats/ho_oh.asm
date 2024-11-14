@@ -1,13 +1,13 @@
 	db HO_OH ; 250
 
-	db 106, 130,  90,  90, 110, 154
+	db 106, 130, 100, 100, 110, 154
 	;   hp  atk  def  spd  sat  sdf
-
-	db FIRE, FLYING
+	;            +10  +10
+	db FLYING, FLYING
 	db 3 ; catch rate
 	db 253 ; base exp
-	db SACRED_ASH ; item 1
-	db SACRED_ASH ; item 2
+	db BRIGHTPOWDER ; item 1
+	db BRIGHTPOWDER ; item 2
 	db 255 ; gender
 	db 100 ; unknown
 	db 120 ; step cycles to hatch
