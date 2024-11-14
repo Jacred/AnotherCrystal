@@ -1,16 +1,16 @@
 	db SQUIRTLE ; 007
 
-	db 44, 48, 65, 43, 50, 64
+	db  44,  48,  65,  43,  55,  65
 	;   hp  atk  def  spd  sat  sdf
-
+	;                       +5   +1
 	db WATER, WATER
 	db 45 ; catch rate
 	db 63 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BITTER_BERRY ; item 1
+	db MYSTIC_WATER ; item 2
 	db 31 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 5, 5 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
