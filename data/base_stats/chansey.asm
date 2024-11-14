@@ -1,16 +1,16 @@
 	db CHANSEY ; 113
 
-	db 250, 5, 5, 50, 35, 105
+	db 250,  15,  15,  50, 105, 105
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +10  +10       +70
 	db NORMAL, NORMAL
 	db 30 ; catch rate
 	db 254 ; base exp
-	db NO_ITEM ; item 1
+	db LUCKY_PUNCH ; item 1
 	db LUCKY_EGG ; item 2
 	db 254 ; gender
 	db 100 ; unknown
-	db 40 ; step cycles to hatch
+	db 8 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
