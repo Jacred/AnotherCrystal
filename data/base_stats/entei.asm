@@ -1,16 +1,16 @@
 	db ENTEI ; 244
 
-	db 115, 115,  85, 100,  90,  75
+	db 115, 115,  85, 100, 100,  85
 	;   hp  atk  def  spd  sat  sdf
-
+	;                      +10  +10
 	db FIRE, FIRE
 	db 3 ; catch rate
 	db 251 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BRIGHTPOWDER ; item 1
+	db BRIGHTPOWDER ; item 2
 	db 255 ; gender
 	db 100 ; unknown
-	db 80 ; step cycles to hatch
+	db 16 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
