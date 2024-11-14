@@ -1,16 +1,16 @@
 	db DRATINI ; 147
 
-	db 41, 64, 45, 50, 50, 50
+	db  41,  74,  55,  60,  60,  60
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +10  +10  +10  +10  +10
 	db DRAGON, DRAGON
 	db 45 ; catch rate
 	db 60 ; base exp
-	db NO_ITEM ; item 1
+	db BITTER_BERRY ; item 1
 	db DRAGON_SCALE ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 40 ; step cycles to hatch
+	db 8 ; step cycles to hatch
 	db 5 ; unknown
 	dn 5, 5 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
