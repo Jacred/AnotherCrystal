@@ -1,8 +1,8 @@
 	db SMEARGLE ; 235
 
-	db  65,  50,  50,  95,  50,  50
+	db  65,  50,  45,  95,  50,  55
 	;   hp  atk  def  spd  sat  sdf
-	;  +10  +30  +15  +20  +30   +5
+	;  +10  +30  +10  +20  +30  +10
 	db NORMAL, NORMAL
 	db 45 ; catch rate
 	db 88 ; base exp
