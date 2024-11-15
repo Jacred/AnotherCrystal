@@ -1,16 +1,16 @@
 	db HOUNDOOM ; 229
 
-	db  75,  90,  50,  95, 110,  80
+	db  75,  90,  70, 105, 125,  85
 	;   hp  atk  def  spd  sat  sdf
-
+	;            +20  +10  +15   +5
 	db DARK, FIRE
 	db 45 ; catch rate
 	db 175 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BURNT_BERRY  ; item 1
+	db BURNT_BERRY  ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
