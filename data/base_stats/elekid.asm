@@ -1,16 +1,16 @@
 	db ELEKID ; 239
 
-	db  45,  63,  37,  95,  65,  55
+	db  45,  83,  37,  95,  65,  55
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +20       
 	db ELECTRIC, ELECTRIC
 	db 45 ; catch rate
 	db 72 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db MINT_BERRY ; item 1
+	db MINT_BERRY ; item 2
 	db 63 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
