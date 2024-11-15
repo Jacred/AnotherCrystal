@@ -1,16 +1,16 @@
 	db HITMONTOP ; 237
 
-	db  50,  95,  95,  70,  35, 110
+	db  50,  95,  95, 105,  35, 110
 	;   hp  atk  def  spd  sat  sdf
-
+	;                 +35
 	db FIGHTING, FIGHTING
 	db 45 ; catch rate
 	db 159 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BITTER_BERRY ; item 1
+	db BLACKBELT ; item 2
 	db 0 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
