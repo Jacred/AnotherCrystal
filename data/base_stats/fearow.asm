@@ -1,16 +1,16 @@
 	db FEAROW ; 022
 
-	db 84, 100,  65,  120, 71,  71
+	db  75, 120,  75, 100,  70,  70
 	;   hp  atk  def  spd  sat  sdf
-
+	;  +10  +30  +10        +9   +9
 	db NORMAL, FLYING
 	db 90 ; catch rate
 	db 155 ; base exp
-	db NO_ITEM ; item 1
+	db BERRY ; item 1
 	db SHARP_BEAK ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 15 ; step cycles to hatch
+	db 3 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
