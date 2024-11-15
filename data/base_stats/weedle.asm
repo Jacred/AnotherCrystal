@@ -1,16 +1,16 @@
 	db WEEDLE ; 013
 
-	db 40, 35, 30, 50, 20, 20
+	db  40,  50,  30,  60,  20,  30
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +15       +10       +10
 	db BUG, POISON
 	db 255 ; catch rate
 	db 39 ; base exp
 	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BERRY ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 15 ; step cycles to hatch
+	db 3 ; step cycles to hatch
 	db 5 ; unknown
 	dn 5, 5 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
