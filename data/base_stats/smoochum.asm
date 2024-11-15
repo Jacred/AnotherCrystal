@@ -1,8 +1,8 @@
 	db SMOOCHUM ; 238
 
-	db  45,  30,  15,  65,  85,  65
+	db  45,  53,  37,  95,  85,  65
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +23  +22  +30
 	db ICE, PSYCHIC
 	db 45 ; catch rate
 	db 61 ; base exp
@@ -10,7 +10,7 @@
 	db ICE_BERRY ; item 2
 	db 254 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 5, 5 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
