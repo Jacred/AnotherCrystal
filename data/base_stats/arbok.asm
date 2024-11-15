@@ -1,16 +1,16 @@
 	db ARBOK ; 024
 
-	db 60, 85, 69, 80, 65, 79
+	db  60, 105,  70,  80,  85,  80
 	;   hp  atk  def  spd  sat  sdf
-
-	db POISON, POISON
+	;       +20   +1       +20   +1
+	db POISON, DARK
 	db 90 ; catch rate
 	db 153 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BERRY ; item 1
+	db POISON_BARB ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
