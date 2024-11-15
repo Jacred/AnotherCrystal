@@ -1,16 +1,16 @@
 	db ELECTABUZZ ; 125
 
-	db 65, 83, 57, 105, 95, 85
+	db  75, 123,  67,  95,  95,  85
 	;   hp  atk  def  spd  sat  sdf
-
+	;  +10  +40  +10  -10
 	db ELECTRIC, ELECTRIC
 	db 45 ; catch rate
 	db 172 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db MINT_BERRY ; item 1
+	db MINT_BERRY ; item 2
 	db 63 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
