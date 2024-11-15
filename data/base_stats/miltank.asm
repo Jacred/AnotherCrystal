@@ -1,8 +1,8 @@
 	db MILTANK ; 241
 
-	db  95,  80, 105, 100,  40,  70
+	db  95,  80, 105, 100,  70,  70
 	;   hp  atk  def  spd  sat  sdf
-
+	;                      +30
 	db NORMAL, NORMAL
 	db 45 ; catch rate
 	db 172 ; base exp
@@ -10,7 +10,7 @@
 	db MOOMOO_MILK ; item 2
 	db 254 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
