@@ -1,16 +1,16 @@
 	db HOUNDOUR ; 228
 
-	db  45,  60,  30,  65,  80,  50
+	db  45,  60,  40,  70,  90,  50
 	;   hp  atk  def  spd  sat  sdf
-
+	;            +10   +5  +10
 	db DARK, FIRE
 	db 120 ; catch rate
 	db 66 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BURNT_BERRY  ; item 1
+	db BURNT_BERRY  ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
