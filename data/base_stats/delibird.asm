@@ -1,16 +1,16 @@
 	db DELIBIRD ; 225
 
-	db  105,  65,  65,  85,  75,  65
+	db  55,  75,  65, 105,  95,  65
 	;   hp  atk  def  spd  sat  sdf
-
+        ;  +10  +20  +20  +30  +30  +20
 	db ICE, FLYING
 	db 45 ; catch rate
 	db 116 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db MINT_BERRY ; item 1
+	db MINT_BERRY ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
