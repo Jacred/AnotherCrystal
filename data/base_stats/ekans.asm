@@ -1,8 +1,8 @@
 	db EKANS ; 023
 
-	db  35,  70,  45,  55,  50,  55
+	db  35,  70,  45,  65,  50,  55
 	;   hp  atk  def  spd  sat  sdf
-	;       +10   +1       +10   +1
+	;       +10   +1  +10  +10   +1
 	db POISON, POISON
 	db 255 ; catch rate
 	db 58 ; base exp
