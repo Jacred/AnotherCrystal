@@ -1,8 +1,8 @@
 	db MAGMAR ; 126
 
-	db 65, 95, 57, 93, 100, 85
+	db  75,  95,  67,  83, 125,  95
 	;   hp  atk  def  spd  sat  sdf
-
+	;  +10       +10  -10  +25  +10
 	db FIRE, FIRE
 	db 45 ; catch rate
 	db 173 ; base exp
@@ -10,7 +10,7 @@
 	db BURNT_BERRY ; item 2
 	db 63 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
