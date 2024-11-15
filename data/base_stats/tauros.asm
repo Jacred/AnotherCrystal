@@ -1,16 +1,16 @@
 	db TAUROS ; 128
 
-	db  75, 100, 105, 110, 60,  70
+	db  75, 100,  95, 110,  70,  70
 	;   hp  atk  def  spd  sat  sdf
-
+	;                      +30
 	db NORMAL, NORMAL
 	db 45 ; catch rate
 	db 172 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BITTER_BERRY ; item 1
+	db BITTER_BERRY ; item 2
 	db 0 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
