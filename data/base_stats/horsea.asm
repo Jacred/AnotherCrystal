@@ -1,8 +1,8 @@
 	db HORSEA ; 116
 
-	db 30, 40, 70, 60, 70, 25
+	db  40,  55,  70,  60,  70,  45
 	;   hp  atk  def  spd  sat  sdf
-
+	;  +10  +15                 +20
 	db WATER, WATER
 	db 225 ; catch rate
 	db 59 ; base exp
@@ -10,7 +10,7 @@
 	db DRAGON_SCALE ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 5, 5 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
