@@ -1,13 +1,13 @@
 	db TYROGUE ; 236
 
-	db  35,  35,  35,  35,  35,  35
+	db  30,  65,  65,  50,  15,  70
 	;   hp  atk  def  spd  sat  sdf
-
+	;   -5  +30  +30       -20  +35
 	db FIGHTING, FIGHTING
 	db 75 ; catch rate
 	db 42 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db GOLD_LEAF ; item 1
+	db FOCUS_BAND ; item 2
 	db 0 ; gender
 	db 100 ; unknown
 	db 25 ; step cycles to hatch
