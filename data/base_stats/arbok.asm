@@ -1,8 +1,8 @@
 	db ARBOK ; 024
 
-	db  60, 105,  70,  80,  85,  80
+	db  70, 105,  70,  80,  85,  80
 	;   hp  atk  def  spd  sat  sdf
-	;       +20   +1       +20   +1
+	;  +10  +20   +1       +20   +1
 	db POISON, DARK
 	db 90 ; catch rate
 	db 153 ; base exp
