@@ -1,16 +1,16 @@
 	db ALAKAZAM ; 065
 
-	db 55, 50, 45, 120, 135, 95
+	db  55,  70,  65, 120, 135, 120
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +20  +20            +35
 	db PSYCHIC, PSYCHIC
 	db 50 ; catch rate
 	db 221 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db TWISTEDSPOON ; item 1
+	db TWISTEDSPOON ; item 2
 	db 63 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
