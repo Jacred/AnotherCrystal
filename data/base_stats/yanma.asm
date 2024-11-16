@@ -1,17 +1,16 @@
 	db YANMA ; 193
 
-	db  70,  65,  60,  95,  105,  50 ; BST 390 > 445
+	db  85,  75,  85, 100, 115,  55
 	;   hp  atk  def  spd  sat  sdf
-;	db  65,  65,  45,  95,  75,  45 old stats
-
+	;  +20  +10  +40   +5  +40  +10
 	db BUG, FLYING
 	db 75 ; catch rate
 	db 78 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db GOLD_LEAF ; item 1
+	db SCOPE_LENS ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
