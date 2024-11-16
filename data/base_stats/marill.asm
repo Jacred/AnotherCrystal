@@ -1,8 +1,8 @@
 	db MARILL ; 183
 
-	db 100,  45,  60,  50,  45,  60
+	db  80,  45,  60,  70,  45,  60
 	;   hp  atk  def  spd  sat  sdf
-	;  +30  +25  +10  +10  +25  +10
+	;  +10  +25  +10  +30  +25  +10
 	db WATER, FAIRY_T
 	db 190 ; catch rate
 	db 88 ; base exp
