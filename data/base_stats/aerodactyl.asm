@@ -1,16 +1,16 @@
 	db AERODACTYL ; 142
 
-	db 80, 105, 65, 130, 60, 75
+	db  80, 120,  75, 140,  65,  85
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +15  +10  +10   +5  +10
 	db ROCK, FLYING
 	db 45 ; catch rate
 	db 180 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BITTER_BERRY ; item 1
+	db BITTER_BERRY ; item 2
 	db 31 ; gender
 	db 100 ; unknown
-	db 35 ; step cycles to hatch
+	db 7 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
