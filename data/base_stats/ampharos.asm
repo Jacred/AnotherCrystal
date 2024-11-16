@@ -1,16 +1,16 @@
 	db AMPHAROS ; 181
 
-	db  90,  75,  85,  55, 115,  90
+	db  90,  85,  95,  50, 140, 100
 	;   hp  atk  def  spd  sat  sdf
-
-	db ELECTRIC, ELECTRIC
+	;       +10  +20   -5  +25  +10
+	db ELECTRIC, DRAGON
 	db 45 ; catch rate
 	db 225 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db MYSTERYBERRY ; item 1
+	db MYSTERYBERRY ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
