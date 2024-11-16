@@ -1,16 +1,16 @@
 	db ABRA ; 063
 
-	db 25, 20, 15, 90, 105, 55
+	db  25,  30,  25,  90, 105,  70
 	;   hp  atk  def  spd  sat  sdf
-
+	;       +10  +10            +15
 	db PSYCHIC, PSYCHIC
 	db 200 ; catch rate
 	db 62 ; base exp
 	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db TWISTEDSPOON ; item 2
 	db 63 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 5, 5 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
