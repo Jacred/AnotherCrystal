@@ -1,16 +1,16 @@
 	db FLAAFFY ; 180
 
-	db  70,  55,  55,  45,  80,  60
+	db  70,  60,  70,  45, 100,  70
 	;   hp  atk  def  spd  sat  sdf
-
+	;        +5  +15       +20  +10
 	db ELECTRIC, ELECTRIC
 	db 120 ; catch rate
 	db 128 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db MYSTERYBERRY ; item 1
+	db MYSTERYBERRY ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 4 ; step cycles to hatch
 	db 5 ; unknown
 	dn 6, 6 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
