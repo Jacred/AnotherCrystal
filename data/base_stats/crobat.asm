@@ -1,16 +1,16 @@
 	db CROBAT ; 169
 
-	db  85,  90,  80, 130,  70,  80
+	db  90,  95,  85, 130,  80,  90
 	;   hp  atk  def  spd  sat  sdf
-
+	;   +5   +5   +5       +10  +10
 	db POISON, FLYING
 	db 90 ; catch rate
 	db 241 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db BITTER_BERRY ; item 1
+	db BITTER_BERRY ; item 2
 	db 127 ; gender
 	db 100 ; unknown
-	db 15 ; step cycles to hatch
+	db 3 ; step cycles to hatch
 	db 5 ; unknown
 	dn 7, 7 ; frontpic dimensions
 	db 0, 0, 0, 0 ; padding
